@@ -1,4 +1,30 @@
 .page-header {
-  color: #ffffff;
-  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+     
+  }
+}
+
+.page-header__logo {
+  margin: 0 auto;
+  height: 56px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 56px;
+    margin-left: 70px;
+  
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 70px;
+}
+
+}
+
+.page-header__logo img {
+  width: 101px;
+  height: 84px;
 }

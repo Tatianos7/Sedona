@@ -10,19 +10,16 @@
 .page-header__logo {
   margin: 0 auto;
   height: 56px;
-  z-index: 2;
-
 
   @media (min-width: $tablet-width) {
     height: 56px;
     margin-left: 70px;
-  
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
     height: 70px;
 }
-
 }
 
 .page-header__logo img {

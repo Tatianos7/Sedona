@@ -1,3 +1,25 @@
+  
+  .site-list__item {
+    height: 55px;
+  }
+  
+  .site-list a {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 12px 21px;
+    padding-bottom: 17px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $whate;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $blue;
+    border-top: 1px solid $whateblue;
+    border-bottom: 1px solid $darkblue;
+  }
+
   .site-list {
     font-weight: bold;
     
@@ -10,21 +32,4 @@
     }
   }
 
-  .site-list__item {
-    height: 55px;
-  }
   
-  .site-list a {
-    position: relative;
-    display: block;
-    padding: 12px 21px;
-    padding-bottom: 13px;
-    font-size: 18px;
-    line-height: 24px;
-    color: $whate;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: $blue;
-    border-top: 1px solid $darkblue;
-    border-bottom: 1px solid $mediumblue;
-  }

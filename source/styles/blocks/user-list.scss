@@ -1,8 +1,16 @@
 @media (min-width: $tablet-width) {
     .user-list {
-      width: 90px;
-    }
+      width: 120px;
   }
+}
+
+.user-list a {
+  @media (min-width: $tablet-width) { 
+    color: $black;
+    border: none;
+  }
+
+}
 
   .user-list__login {
     position: relative;
@@ -12,4 +20,32 @@
     line-height: 18px;
     text-decoration: none;
     margin-top: 10px;
+    border-top: 1px solid $whateblue;
+   
+  }
+
+  .user-list__favorit-button {
+    position: relative;
+    display: block;
+    padding: 17px 21px;
+    padding-left: 25px;
+    line-height: 18px;
+    text-decoration: none;
+    margin-top: 12px; 
+    width: 120px;
+  }
+
+  .user-list__login-icon {
+    position: relative;
+    top: 2px;
+    left: -5px;
+    width: 16px;
+    height: 16px;
+    opacity: 0.3;
+    fill: $whate;
+
+    @media (min-width: $tablet-width) { 
+      fill: $black;
+    }
+    
   }

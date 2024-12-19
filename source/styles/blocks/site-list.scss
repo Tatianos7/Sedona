@@ -1,6 +1,7 @@
   
   .site-list__item {
     height: 55px;
+    
   }
   
   .site-list a {
@@ -8,7 +9,7 @@
     display: block;
     margin: 0 auto;
     text-align: center;
-    padding: 12px 21px;
+    padding: 17px 21px;
     padding-bottom: 17px;
     font-size: 18px;
     line-height: 24px;
@@ -17,7 +18,14 @@
     text-decoration: none;
     background-color: $blue;
     border-top: 1px solid $whateblue;
-    border-bottom: 1px solid $darkblue;
+    border-bottom: 1px solid $whateblue;
+
+    @media (min-width: $tablet-width) { 
+      background-color: $whate;
+      border: none;
+      color: $black;
+      
+    }
   }
 
   .site-list {
@@ -25,6 +33,7 @@
     
     @media (min-width: $tablet-width) {
       width: 372px;
+      background-color: $whate;
     }
     
     @media (min-width: $desktop-width) {

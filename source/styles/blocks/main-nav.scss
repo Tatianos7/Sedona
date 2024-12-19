@@ -1,8 +1,17 @@
 .main-nav {
   position: relative;
+  // position: absolute; // прибивает к потолку меню. Как убрать синюю плашку после закрытия меня(мобилка)
+  // top: 0;
+  // left: 0;
+  // width: 100%;
   width: auto;
   min-height: 51px;
   background-color: $blue;
+  @media (min-width: $tablet-width) {
+    background-color: $whate;
+    
+  }
+
 }
 
 .main-nav__toggle { // кнопка выпада меню
@@ -16,6 +25,8 @@
   background-color: $whate;
   cursor: pointer;
   border: none;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     display: none; 
 }
@@ -55,26 +66,28 @@
   }
   // &:active::before, // состояние
   // &:active::after {
-  //   background-color: fade($whate, 30$);
+  //   background-color: fade($whate, 30%);
   // }
 
 }
 
 .main-nav__list { // сброс дефолтных стилей
-    margin-top: 5px;
+    margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  .main-nav__list a {
+    color: $whate;
+    text-decoration: none;
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-  }
-
-  .main-nav__list a {
-    color: $whate;
-    text-decoration: none;
+    margin: 0 auto;
+  
   }
 
 .main-nav__wrapper {
@@ -94,4 +107,21 @@
     }
 }
   
+@media (max-width: $mobile-width-only) { // открытие и закрытие меню
+  
+  .main-nav--closed .site-list__item {
+    display: none;
 
+    &--active { //отображает текущую страницу (особо и не нужна в макете этого нет)
+      display: block;
+    }
+    
+    .main-nav--nojs .main-nav__toggle {
+      display: none;
+    }
+  }
+
+  .main-nav--closed .user-list__item {
+    display: none;
+  }
+}

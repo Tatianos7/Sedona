@@ -4,14 +4,13 @@
   // top: 0;
   // left: 0;
   // width: 100%;
-  width: auto;
+  width: 0 auto;
   min-height: 51px;
   background-color: $blue;
+
   @media (min-width: $tablet-width) {
     background-color: $whate;
-    
   }
-
 }
 
 .main-nav__toggle { // кнопка выпада меню
@@ -75,6 +74,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    width: 768px;
   }
 
   .main-nav__list a {
@@ -87,7 +87,6 @@
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
-  
   }
 
 .main-nav__wrapper {
@@ -95,12 +94,14 @@
   @media (min-width: $tablet-width) {
         display: flex;
         justify-content: space-between;
-        width: 640px;
+        width: 768px;
         margin: 0 auto;
+        position: relative;
+        
   }
   
   @media (min-width: $desktop-width) {
-        width: 960px;
+        width: 1200px;
         .main-nav__toggle {
           display: none;
         }

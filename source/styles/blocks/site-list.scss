@@ -1,7 +1,6 @@
   
   .site-list__item {
     height: 55px;
-    
   }
   
   .site-list a {
@@ -24,7 +23,8 @@
       background-color: $whate;
       border: none;
       color: $black;
-      
+      padding-left: 15px;
+      padding-left: 15px;
     }
   }
 
@@ -32,12 +32,18 @@
     font-weight: bold;
     
     @media (min-width: $tablet-width) {
+      position: relative; 
+      top: -60px;
+      left: 150px;
       width: 372px;
       background-color: $whate;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
     }
     
     @media (min-width: $desktop-width) {
-      width: 490px;
+      width: 600px;
     }
   }
 

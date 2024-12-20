@@ -1,6 +1,23 @@
-@media (min-width: $tablet-width) {
-    .user-list {
-      width: 120px;
+.user-list {
+  @media (min-width: $tablet-width) {
+    position: relative; 
+    top: -60px;
+    right: -200px;
+    width: 372px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative; 
+    top: -60px;
+    right: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
   }
 }
 
@@ -8,8 +25,11 @@
   @media (min-width: $tablet-width) { 
     color: $black;
     border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 90px;
   }
-
 }
 
   .user-list__login {
@@ -21,7 +41,6 @@
     text-decoration: none;
     margin-top: 10px;
     border-top: 1px solid $whateblue;
-   
   }
 
   .user-list__favorit-button {
@@ -47,5 +66,4 @@
     @media (min-width: $tablet-width) { 
       fill: $black;
     }
-    
   }

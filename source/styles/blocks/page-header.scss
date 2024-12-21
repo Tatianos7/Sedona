@@ -3,25 +3,24 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-     
+     display: flex;
   }
 }
 
 .page-header__logo {
   margin: 0 auto;
   height: 56px;
-  z-index: 1;
 
   @media (min-width: $tablet-width) {
     height: 56px;
-    margin-left: 70px;
-  
+    margin-left: 50px;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
     height: 70px;
+    margin-left: 70px;
 }
-
 }
 
 .page-header__logo img {

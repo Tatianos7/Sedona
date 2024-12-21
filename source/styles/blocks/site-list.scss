@@ -1,15 +1,4 @@
-  .site-list {
-    font-weight: bold;
-    
-    @media (min-width: $tablet-width) {
-      width: 372px;
-    }
-    
-    @media (min-width: $desktop-width) {
-      width: 490px;
-    }
-  }
-
+  
   .site-list__item {
     height: 55px;
   }
@@ -17,14 +6,45 @@
   .site-list a {
     position: relative;
     display: block;
-    padding: 12px 21px;
-    padding-bottom: 13px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 17px 21px;
+    padding-bottom: 17px;
     font-size: 18px;
     line-height: 24px;
     color: $whate;
     text-transform: uppercase;
     text-decoration: none;
     background-color: $blue;
-    border-top: 1px solid $darkblue;
-    border-bottom: 1px solid $mediumblue;
+    border-top: 1px solid $whateblue;
+    border-bottom: 1px solid $whateblue;
+
+    @media (min-width: $tablet-width) { 
+      background-color: $whate;
+      border: none;
+      color: $black;
+      padding-left: 15px;
+      padding-left: 15px;
+    }
   }
+
+  .site-list {
+    font-weight: bold;
+    
+    @media (min-width: $tablet-width) {
+      position: relative; 
+      top: -60px;
+      left: 150px;
+      width: 372px;
+      background-color: $whate;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    
+    @media (min-width: $desktop-width) {
+      width: 600px;
+    }
+  }
+
+  

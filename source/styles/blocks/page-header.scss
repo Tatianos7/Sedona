@@ -13,7 +13,7 @@
 
   @media (min-width: $tablet-width) {
     height: 56px;
-    margin-left: 50px;
+    margin-left: 70px;
     z-index: 2;
   }
 
@@ -24,6 +24,11 @@
 }
 
 .page-header__logo img {
+  display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   width: 101px;
   height: 84px;
 }

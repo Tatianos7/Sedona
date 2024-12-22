@@ -1,128 +1,97 @@
 .main-nav {
-  position: relative;
-  // position: absolute; // прибивает к потолку меню. Как убрать синюю плашку после закрытия меня(мобилка)
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  width: 0 auto;
-  min-height: 51px;
-  background-color: $blue;
-
-  @media (min-width: $tablet-width) {
-    background-color: $whate;
-  }
-}
-
-.main-nav__toggle { // кнопка выпада меню
-  position: absolute;
-  top: -40px;
-  right: 20px;
-  z-index: 2;
-  display: block;
-  width: 23px;
-  height: 22px;
-  background-color: $whate;
-  cursor: pointer;
-  border: none;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    display: none; 
-}
-}
-
-.main-nav--closed .main-nav__toggle::before { // бургер для меню
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 23px;
-  height: 4px;
-  background-color: $blue;
-  box-shadow: 0 8px 0 0 $blue, 0 16px 0 0 $blue;
-}
-
-.main-nav--opened .main-nav__toggle { // кнопка закрытия (крестик)
-  right: 30px;
-  top: 17px;
-  background-color: $blue;
-  
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    background-color: $whate;
-    width: 23px;
-    height: 4px;
+    position: relative;
+    width: auto;
+   
   }
 
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-  &::after {
-    transform: rotate(-45deg);
-  }
-  // &:active::before, // состояние
-  // &:active::after {
-  //   background-color: fade($whate, 30%);
-  // }
-
+  @media (max-width: $mobile-width-only) { // прибивает выпадающее меню к потолку
+    .main-nav--opened {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
 }
 
-.main-nav__list { // сброс дефолтных стилей
+  .main-nav__list { // обнуление дефолтных стилей
     margin: 0;
     padding: 0;
-    list-style: none;
-    width: 768px;
   }
 
-  .main-nav__list a {
-    color: $whate;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    margin: 0 auto;
+  .main-nav__toggle { //кнопка выпадающего меню
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
   }
+
+  .main-nav--closed .main-nav__toggle::before { //кнопка бургер
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: -17px;
+    width: 22px;
+    height: 4px;
+    background-color: $blue;
+    box-shadow: 0 8px 0 0 $blue, 0 16px 0 0 $blue;
+  }
+  
+
+  @media (max-width: $mobile-width-only) {
+    .main-nav--closed .site-list__item {
+        display: none;
+      }
+      
+      .main-nav--closed .user-list__item {
+        display: none;
+      }
+
+      .main-nav--nojs .main-nav__toggle {
+        display: none;
+      }
+
+  }
+
+  .main-nav--opened .main-nav__toggle { //кнопка крестик
+    top: 17px;
+    left: auto;
+    right: 30px;
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 4px;
+      background-color: $whate;
+    }
+  
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+  
+    &::after {
+      transform: rotate(-45deg);
+    }
+}
 
 .main-nav__wrapper {
-  
-  @media (min-width: $tablet-width) {
-        display: flex;
-        justify-content: space-between;
-        width: 768px;
-        margin: 0 auto;
-        position: relative;
-        
-  }
-  
-  @media (min-width: $desktop-width) {
-        width: 1200px;
-        .main-nav__toggle {
-          display: none;
-        }
-    }
-}
-  
-@media (max-width: $mobile-width-only) { // открытие и закрытие меню
-  
-  .main-nav--closed .site-list__item {
-    display: none;
-
-    &--active { //отображает текущую страницу (особо и не нужна в макете этого нет)
-      display: block;
+    background-color: $blue;
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      width: 640px;
+      margin: 0 auto;
     }
     
-    .main-nav--nojs .main-nav__toggle {
-      display: none;
+    @media (min-width: $desktop-width) {
+      width: 960px;
     }
   }
-
-  .main-nav--closed .user-list__item {
-    display: none;
-  }
-}

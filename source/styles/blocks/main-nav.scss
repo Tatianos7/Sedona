@@ -1,7 +1,13 @@
 .main-nav {
     position: relative;
     width: auto;
-   
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+        width: 100%;
+        top: 0;
+        left: 80px;
+    }
   }
 
   @media (max-width: $mobile-width-only) { // прибивает выпадающее меню к потолку
@@ -16,6 +22,7 @@
   .main-nav__list { // обнуление дефолтных стилей
     margin: 0;
     padding: 0;
+
   }
 
   .main-nav__toggle { //кнопка выпадающего меню
@@ -29,6 +36,10 @@
     background-color: transparent;
     cursor: pointer;
     border: none;
+
+    @media (min-width: $tablet-width) { // кнопка убирается
+      display: none;
+    }
   }
 
   .main-nav--closed .main-nav__toggle::before { //кнопка бургер
@@ -84,11 +95,14 @@
 
 .main-nav__wrapper {
     background-color: $blue;
+
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
-      width: 640px;
+      width: 80%;
+      max-width: 960px;
       margin: 0 auto;
+      background-color: $whate;
     }
     
     @media (min-width: $desktop-width) {

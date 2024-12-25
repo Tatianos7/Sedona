@@ -5,7 +5,7 @@
 
     @media (min-width: $tablet-width) {
       display: flex;
-      // justify-content: space-between;
+      justify-content: space-between;
       justify-content: flex-start;
       flex-wrap: wrap;
       width: 570px;
@@ -35,7 +35,6 @@
     border-bottom: 1px solid $mediumblue;
 
  @media (min-width: $tablet-width) {
-     background-color: $whate;
      border: none;
       }
     

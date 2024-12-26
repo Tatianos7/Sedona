@@ -11,7 +11,7 @@
   <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img src="images/logotype-mobile.svg" width="101" height="84" alt="Седона">
+          <img src="images/logotype-mobile.svg" width="101" height="84" alt="Седона">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -54,7 +54,10 @@
 
     <main class="page-main">
         <h1 class="visually-hidden">Туристический город Седона</h1>
+        <picture>
+          <source media="(min-width: 768px)" srcset="">
         <img class="page-main__img" src="images/back-desktop@1x.jpg" width="767px" height="581" alt="Город Седона">
+        </picture>
 
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -67,10 +70,8 @@
           <li class="advantages__item">
             <div class="advantages__description">
               <h3 class="advantages__title">Настоящий городок</h3>
-              <p class="advantages__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
-            <div class="advantages__image">
-            <img src="images/photo-bridge@1x.jpg" width="320" height="260" alt="Фото города Седона с заведенями">
+              <p class="advantages__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>            
+            <img class="advantages__image" src="images/photo-bridge@1x.jpg" width="320" height="260" alt="Фото города Седона с заведенями">
           </div>
 
             <ul class="advantages__list">
@@ -94,7 +95,7 @@
               <h3 class="advantages__title">Там есть<br>мост дьявола</h3>
               <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
-            <img class="advantages__image" src="images/photo-city@1x.jpg" width="800" height="256" alt="Фото Моста дьявола: природного каменного моста между скалами">
+            <img class="advantages__image" src="images/photo-city@1x.jpg" width="320" height="260" alt="Фото Моста дьявола: природного каменного моста между скалами">
           </li>
 
           <li class="advantages__item">

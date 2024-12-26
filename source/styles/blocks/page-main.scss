@@ -1,5 +1,10 @@
 .page-main__img {
     @media (min-width: $tablet-width) {
         width: 100%;
+        background-position: 50% 0;
+        background-size: cover;
+    }
+    @media (min-width: $desktop-width) {
+        width: 100%;
     }
 }

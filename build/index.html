@@ -37,7 +37,7 @@
         <ul class="main-nav__list user-list">
           <!-- <li class="user-list__item">
             <a class="user-list__favorit-button" href="#">
-              <span class="user-list__favorit visually-hidden">Избранное</span>
+              <span class="user-list__favorit visually-hidden"> Избранное </span>
               <svg viewBox="0 0 19 17" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M9.44 17a.9.9 0 0 1-.8-.4c-5.41-6.1-6.72-7.5-7.02-7.9a5.4 5.4 0 0 1 4.41-8.7c1.3 0 2.51.5 3.51 1.3a5.47 5.47 0 0 1 9.03 4.1c0 1.3-.5 2.5-1.3 3.4l-7.02 7.9c-.2.2-.4.3-.8.3Zm-6.01-9.5c.3.4 3.5 4 6.11 6.9l6.22-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2.01.5-2.71 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.72-1.3c-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg><sup class="user-list__icon--counter">12</sup>
             </a>
           </li> -->
@@ -54,10 +54,26 @@
 
     <main class="page-main">
         <h1 class="visually-hidden">Туристический город Седона</h1>
-        <picture>
-          <source media="(min-width: 768px)" srcset="">
-        <img class="page-main__img" src="images/back-desktop@1x.jpg" width="767px" height="581" alt="Город Седона">
-        </picture>
+        <section class="page-main__block">
+          <div class="page-main__front">
+            <img class="page-main__img" src="images/back-desktop@1x.jpg" width="320px" height="518" alt="Город Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/logotype-desctop@1x.png, images/logotype-desctop@2x.png" width="461" height="350">
+              <source media="(min-width: 768px)" srcset="images/logotype-tablet@1x.png, images/logotype-tablet@2x.png" width="461" height="350">
+              <img class="page-main__hero" src="images/logotype-mobail@1x.png" srcset="images/logotype-mobaile@2.png" width="282" height="214" alt="Город Седона"> <!--контентная картинка-->
+            </picture>
+          </div>
+        </section>
+
+        <!-- из телеграмм -->
+          <!-- <picture>
+            <source media="(min-width: 768px)" srcset="img/stack.svg#sedona-greeting-tablet 1x, 
+            img/stack.svg#sedona-greeting-tablet@2x 2x" width="461" height="350">
+
+            <img class="hero__img" src="img/stack.svg#sedona-greeting" 
+            srcset="img/stack.svg#sedona-greeting@2x 2x" width="282" height="214" 
+            alt="Добро пожаловать в великолепную седону. Потому что Гранд-Каньон - отстой.">
+        </picture> -->
 
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -70,8 +86,12 @@
           <li class="advantages__item">
             <div class="advantages__description">
               <h3 class="advantages__title">Настоящий городок</h3>
-              <p class="advantages__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>            
+              <p class="advantages__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <div>
+                  <picture>
             <img class="advantages__image" src="images/photo-bridge@1x.jpg" width="320" height="260" alt="Фото города Седона с заведенями">
+          </picture>
+          </div>
           </div>
 
             <ul class="advantages__list">

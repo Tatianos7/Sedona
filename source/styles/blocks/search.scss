@@ -1,7 +1,8 @@
 .search__wrapper {
     width: 320px;
+    padding: 33 25px;
+    padding-bottom: 49px;
     margin: 0 auto;
-    margin-bottom: 40px;
     text-align: center;
     @media (min-width: $tablet-width) {
         width: 768px;
@@ -11,6 +12,20 @@
         width: 1200px;
       }
     
+}
+
+.search__title {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.search__description {
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 27px;
 }
 
 .search__button {

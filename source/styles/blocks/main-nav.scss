@@ -94,6 +94,7 @@
 
 .main-nav__wrapper {
     background-color: $blue;
+    margin: 0 auto;
 
     @media (min-width: $tablet-width) {
       display: flex;

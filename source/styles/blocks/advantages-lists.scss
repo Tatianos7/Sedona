@@ -19,8 +19,13 @@
         display: grid;
         align-content: start;
         gap: 20px;
+
     }
 }
+
+// .advantages__item:nth-child(even) {
+//     background-color: $whate;
+// }
 
 .advantages__item-title {
     margin: 0;

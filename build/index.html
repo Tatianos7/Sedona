@@ -57,7 +57,7 @@
         <section class="page-main__block">
           <div class="page-main__front">
             <picture>
-              <source media="(min-width: 768px)" srcset="images/front-mobile.svg#sedona-greeting-table, images/front-mobile.svg#sedona-greeting-tablet@2x 2x" width="461" height="350">
+              <source media="(min-width: 768px)" srcset="images/front-tablet.svg#sedona-greeting-tablet, images/front-tablet.svg#sedona-greeting-tablet@2x 2x" width="461" height="350">
              <img class="page-main__hero" src="images/front-mobile.svg#sedona-greeting" srcset="images/front-mobile.svg#sedona-greeting@2x 2x" width="282" height="214" alt="Город Седона"> <!--контентная картинка-->
             </picture>
           </div>
@@ -89,23 +89,25 @@
             </div>
                 <div class="advantages__photo">
                   <picture>
-                    <img class="advantages__image" src="images/photo-bridge@1x.jpg" width="520" height="260" alt="Фото города Седона с заведенями">
+                    <source media="(min-width: 1200px)" srcset="images/photo-city-desktop@1x@1x.jpg#sedona-advantages-desktop, images/photo-city-desktop@1x@2x.jpg#sedona-advantages-desktop@2x 2x" width="520" height="260">
+                    <source media="(min-width: 768px)" srcset="images/photo-city-tablet@1x@1x.jpg#sedona-advantages-tablet, images/photo-city-tablet@1x@2x.jpg#sedona-advantages-tablet@2x 2x" width="520" height="260">
+                    <img class="advantages__image" src="images/photo-city-mobile@1x 1@1x.jpg" srcset="images/photo-city-mobile@1x 1@2x.jpg#sedona-advantages-mobile 2x" width="520" height="260" alt="Фото города Седона с заведенями">
           </picture>
           </div> 
         </li>
 
             <ul class="advantages__lists">
-              <li class="advantages__item advantages__item--housing">
-                <h4 class="advantages__item-title">Жильё</h4>
-                <p class="advantages__item-text">Рекомендуем пожить<br>в настоящем мотеле,<br> всё как в кино!</p>
+              <li class="advantages__items advantages__item--housing">
+                <h4 class="advantages__items-title">Жильё</h4>
+                <p class="advantages__items-text">Рекомендуем пожить<br>в настоящем мотеле,<br> всё как в кино!</p>
               </li>
-              <li class="advantages__item advantages__item--gift">
-                <h4 class="advantages__item-title">Сувениры</h4>
-                <p class="advantages__item-text">Не только китайского,<br> но и настоящего местного<br>производства!</p>
+              <li class="advantages__items advantages__item--gift">
+                <h4 class="advantages__items-title">Сувениры</h4>
+                <p class="advantages__items-text">Не только китайского,<br> но и настоящего местного<br>производства!</p>
               </li>
-              <li class="advantages__item advantages__item--food">
-                <h4 class="advantages__item-title">Еда</h4>
-                <p class="advantages__item-text">Всегда заказывайте<br> фирменный бургер,<br> вы не разочаруетесь!</p>
+              <li class="advantages__items advantages__item--food">
+                <h4 class="advantages__items-title">Еда</h4>
+                <p class="advantages__items-text">Всегда заказывайте<br> фирменный бургер,<br> вы не разочаруетесь!</p>
               </li>
             </ul>
           
@@ -117,7 +119,9 @@
             </div>
             <div class="advantages__photo">
             <picture>
-            <img class="advantages__image" src="images/photo-city@1x.jpg" width="520" height="260" alt="Фото Моста дьявола: природного каменного моста между скалами">
+              <source media="(min-width: 1200px)" srcset="images/photo-bridge-desktop@1x@1x.jpg#sedona-advantages-desktop, images/photo-bridge-desktop@1x@2x.jpg#sedona-advantages-desktop@2x 2x" width="800" height="260">
+              <source media="(min-width: 768px)" srcset="images/photo-bridge-tablet@1x@1x.jpg#sedona-advantages-tablet, images/photo-bridge-tablet@1x@2x.jpg#sedona-advantages-tablet@2x 2x" width="512" height="260">
+            <img class="advantages__image" src="images/photo-bridge-mobail@1x 1@1x.jpg" srcset="images/photo-bridge-mobail@1x 1@2x.jpg#sedona-advantages-mobile 2x" width="520" height="260" alt="Фото Моста дьявола: природного каменного моста между скалами">
             </picture>
           </div>
           </li>

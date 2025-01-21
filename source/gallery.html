@@ -52,9 +52,16 @@
     </nav>
   </header>
 
-    <main class="page-main">
-        <h1 class="visually-hidden">Туристический город Седона</h1>
-        <img src="images/back-desktop@1x.jpg" width="1200" height="581" alt="Город Седона">
+  <main class="page-main">
+    <h1 class="visually-hidden">Туристический город Седона</h1>
+    <section class="page-main__block">
+      <div class="page-main__front">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/front-mobile.svg#sedona-greeting-table 1x, images/front-mobile.svg#sedona-greeting-tablet@2x 2x" width="461" height="350">
+         <img class="page-main__hero" src="images/front-mobile.svg#sedona-greeting" srcset="images/front-mobile.svg#sedona-greeting@2x 2x" width="282" height="214" alt="Город Седона"> <!--контентная картинка-->
+        </picture>
+      </div>
+    </section>
 
         <section class="photo-gallery">
             <div class="photo__wrapper">

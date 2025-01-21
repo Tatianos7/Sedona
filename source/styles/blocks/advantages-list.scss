@@ -17,7 +17,8 @@
 
     @media (min-width: $tablet-width) {
       display: grid;
-      gap: 30px;
+      // align-content: start;
+      // gap: 30px;
     }
   }
 
@@ -37,6 +38,10 @@
     height: 211px;
     background-color: $blue;
     color: $whate;
+
+    @media (min-width: $tablet-width) {
+      height: 100%;
+    }
   }
 
   // .advantages__description::before {
@@ -52,25 +57,13 @@
 
   .advantages__photo {
     @media (min-width: $tablet-width) {
-    grid-column: 2 / -1;
+      grid-column: 2 / -1;
     }
   }
-
-  // .advantages__image {   //возможно исправится после добавления фото по размерам
-  //   grid-column: span 2;
-  //   width: 100%;
-  //   height: 0;
-  //   object-fit: cover;
-
-  // }
   
   .advantages__description-favor {
     background-color: $mediumgrey;
   }
-
-//   .advantages__description-favor:last-child { задать линии через befor
-//     border-bottom: 1px solid $grey;
-//   }
   
   .advantages__text {
     text-align: center;
@@ -80,6 +73,10 @@
     margin: 0;
   }
   
+  .advantages__image {
+    min-width: 100%;
+    min-height: 100%;
+  }
 
   
   

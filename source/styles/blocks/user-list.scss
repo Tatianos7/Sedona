@@ -1,5 +1,37 @@
-@media (min-width: $tablet-width) {
-    .user-list {
-      width: 90px;
+.user-list {
+    @media (min-width: $tablet-width) {
+      // width: 20px;
+      list-style-type: none;
     }
+  }
+
+.user-list__login {
+    position: relative;
+    display: block;
+    padding: 17px 10px;
+    padding-right: 49px;
+    line-height: 18px;
+    font-weight: bold;
+    color: $whate;
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid $whateblue;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: center;
+      padding: 17px 10px;
+      color: $black;
+      border: none;
+      }
+  }
+
+  .user-list__login-icon {
+    fill: $whate;
+    opacity: 0.5;
+    margin-right: 10px;
+
+    @media (min-width: $tablet-width) {
+      fill: $black;
+      }
   }

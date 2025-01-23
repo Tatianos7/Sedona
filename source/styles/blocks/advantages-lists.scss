@@ -25,14 +25,19 @@
         width: 100%;
         min-height: 384px;
         padding: 30px;
-        padding-top: 60px;
+        padding-top: 184px;
     } 
 }
 
 .advantages__icon-items {
-    // адаптировать под мобилку    
-    @media (min-width: $tablet-width) {
-        margin: 0 auto;
+    // адаптация мобилки и табла
+    background-image: url("/build/icons/stack.svg#icon-items");
+    // background-position: ;
+
+    @media (min-width: $tablet-width) { 
+        background-image: url("/build/icons/stack.svg#icon-items");
+        width: 75px;
+        height: 72px;
     }
 
 }

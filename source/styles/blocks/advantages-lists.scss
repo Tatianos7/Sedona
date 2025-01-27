@@ -17,29 +17,31 @@
 .advantages__items {
     display: flex;
     flex-direction: column;
+    br {
+        display: none;
+    }
 
     @media (min-width: $tablet-width) {
         display: grid;
         align-content: start;
+        text-align: center;
         gap: 26px;
         width: 100%;
-        min-height: 384px;
+        min-height: 380px;
         padding: 30px;
-        padding-top: 184px;
+        padding-top: 80px;
     } 
 }
 
 .advantages__icon-items {
-    // адаптация мобилки и табла
-    background-image: url("/build/icons/stack.svg#icon-items");
-    // background-position: ;
-
+    fill: $blue;
+  
     @media (min-width: $tablet-width) { 
-        background-image: url("/build/icons/stack.svg#icon-items");
+        position: relative;
+        margin: 0 auto;
         width: 75px;
         height: 72px;
     }
-
 }
 
 // .advantages__item:nth-child(even) {
@@ -48,24 +50,9 @@
 
 .advantages__items-title {
     margin: 0;
-    br {
-        display: none;
-    }
-
-    @media (min-width: $tablet-width) {
-        text-align: center;
-}
+    
 }
 
 .advantages__items-text {
     margin: 0;
-    margin-top: 26px;
-    margin-bottom: 26px;
-    br {
-        display: none;
-    }
-
-    @media (min-width: $tablet-width) {
-        text-align: center;
-}
 }

@@ -57,23 +57,13 @@
     <main class="page-main">
         <h1 class="visually-hidden">Туристический город Седона</h1>
         <section class="page-main__block">
-          <div class="page-main__front">
+            <div class="page-main__front">
             <picture>
               <source media="(min-width: 768px)" srcset="images/front-tablet.svg#sedona-greeting-tablet 1x, images/front-tablet.svg#sedona-greeting-tablet@2x 2x" width="461" height="350">
              <img class="page-main__hero" src="images/front-mobile.svg#sedona-greeting" srcset="images/front-mobile.svg#sedona-greeting@2x 2x" width="282" height="214" alt="Город Седона"> <!--контентная картинка-->
             </picture>
-          </div>
+          </div>        
         </section>
-
-        <!-- из телеграмм -->
-          <!-- <picture>
-            <source media="(min-width: 768px)" srcset="img/stack.svg#sedona-greeting-tablet 1x, 
-            img/stack.svg#sedona-greeting-tablet@2x 2x" width="461" height="350">
-
-            <img class="hero__img" src="img/stack.svg#sedona-greeting" 
-            srcset="img/stack.svg#sedona-greeting@2x 2x" width="282" height="214" 
-            alt="Добро пожаловать в великолепную седону. Потому что Гранд-Каньон - отстой.">
-        </picture> -->
 
       <section class="advantages"> <!--фото контентные-->
         <div class="advantages__wrapper">
@@ -103,22 +93,28 @@
                 <svg class="advantages__icon-items" width="39" height="37">
                   <use xlink:href="icons/stack.svg#icon-house"></use>
                 </svg> 
+                <div class="advantages__items-block">
                 <h4 class="advantages__items-title">Жильё</h4>
                 <p class="advantages__items-text">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+              </div>
               </li>
               <li class="advantages__items advantages__items--gift">
                 <svg class="advantages__icon-items" width="39" height="37">
-                  <use xlink:href="icons/stack.svg#icon-burger"></use>
+                  <use xlink:href="icons/stack.svg#icon-gift"></use>
                 </svg> 
+                <div class="advantages__items-block">
                 <h4 class="advantages__items-title">Сувениры</h4>
                 <p class="advantages__items-text">Не только китайского,<br> но и настоящего местного<br>производства!</p>
+              </div>
               </li>
               <li class="advantages__items advantages__items--food">
                 <svg class="advantages__icon-items" width="39" height="37">
-                  <use xlink:href="icons/stack.svg#icon-gift"></use>
+                  <use xlink:href="icons/stack.svg#icon-burger"></use>
                 </svg> 
+                <div class="advantages__items-block">
                 <h4 class="advantages__items-title">Еда</h4>
                 <p class="advantages__items-text">Всегда заказывайте<br> фирменный бургер,<br> вы не разочаруетесь!</p>
+              </div>
               </li>
             </ul>
           
@@ -215,8 +211,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <b class="social__title">#Давайте отдыхать вместе!</b>
+
         <div class="page-footer__social social">
-          <b class="social__title">#Давайте отдыхать вместе!</b>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">

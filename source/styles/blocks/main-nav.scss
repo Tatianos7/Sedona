@@ -1,11 +1,11 @@
 .main-nav {
-    position: relative;
-    width: auto;
+  position: relative;
+  width: auto;
 
-  @media (min-width: $tablet-width) {
-   position: static;
-   width: 100%;
-   margin-left: 20px;
+    @media (min-width: $tablet-width) {
+      // position: static;
+      width: 100%;
+      // margin-left: 20px;
 }
 }
 
@@ -100,7 +100,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
-      width: 90%;
+      // width: 90%;
       background-color: $whate;
     }
   }

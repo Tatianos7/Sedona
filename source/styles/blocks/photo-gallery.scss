@@ -1,15 +1,8 @@
 .photo__wrapper {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 40px;
     text-align: center;
-    @media (min-width: $tablet-width) {
-        width: 648px;
-      }
-    
-      @media (min-width: $desktop-width) {
-        width: 1200px;
-      }
 }
 
 .gallery__list {

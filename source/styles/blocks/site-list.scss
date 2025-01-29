@@ -8,13 +8,14 @@
       justify-content: space-between;
       justify-content: flex-start;
       flex-wrap: wrap;
-      width: 570px;
+      // width: 570px;
+      margin-left: 10px;
       flex-grow: 1;
       }
       
-      @media (min-width: $desktop-width) {
-        width: 780px;
-      }
+      // @media (min-width: $desktop-width) {
+      //   width: 780px;
+      // }
     }
 
 .site-list a {

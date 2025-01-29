@@ -1,0 +1,16 @@
+.video__wrapper{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center; 
+
+    @media (min-width: $tablet-width) {
+        min-width: 100%;
+      }
+}
+
+.video-play {
+    @media (min-width: $tablet-width) {
+        min-width: 100%;
+      }
+    }

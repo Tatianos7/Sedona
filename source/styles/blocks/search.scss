@@ -1,17 +1,9 @@
 .search__wrapper {
-    width: 320px;
+    width: 100%;
     padding: 33 25px;
     padding-bottom: 49px;
     margin: 0 auto;
     text-align: center;
-    @media (min-width: $tablet-width) {
-        width: 768px;
-      }
-    
-      @media (min-width: $desktop-width) {
-        width: 1200px;
-      }
-    
 }
 
 .search__title {
@@ -43,3 +35,6 @@
   }
 }
 
+iframe {
+  width: 100%;
+}

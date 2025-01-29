@@ -9,6 +9,7 @@
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
 <body class="page-body">
+  
   <header class="page-header">
     <a class="page-header__logo" href="#">
         <img src="images/logotype-mobile.svg" width="101" height="84" alt="Седона">
@@ -146,23 +147,40 @@
 
       <footer class="page-footer">
         <div class="page-footer__wrapper">
+          <b class="social__title">#Давайте отдыхать вместе!</b>
+  
           <div class="page-footer__social social">
-            <b class="social__title">Давайте отдыхать вместе!</b>
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <svg class="social__icon-items" width="17" height="14">
+                    <use xlink:href="icons/stack.svg#icon-twitter"></use>
+                  </svg>  
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                  <svg class="social__icon-items" width="17" height="14">
+                    <use xlink:href="icons/stack.svg#icon-facebook"></use>
+                  </svg> 
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                  <svg class="social__icon-items" width="17" height="14">
+                    <use xlink:href="icons/stack.svg#icon-youtube"></use>
+                  </svg> 
+                </a>
               </li>
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__icon" width="27" height="34">
+                <use xlink:href="icons/stack.svg#htmlacademy"></use>
+              </svg> 
+            </a>
           </div>
         </div>
       </footer>

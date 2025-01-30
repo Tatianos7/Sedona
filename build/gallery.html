@@ -64,18 +64,20 @@
       </div>
     </section>
 
-        <section class="photo-gallery">
+        <section class="photo-container">
             <div class="photo__wrapper">
                 <h2 class="video-hidden">Фото и видео</h2>
-                <p class="photo__slogan">фото и видео</p>
                 <p class="photo__intro">не можете решиться на путешествие из-за курса? <br> фотографии помогут вам забыть о политике и экономике</p>
             </div>
+
             <div class="gallery__list">
+              
             <figure class="gallery__item-wrapper">
               <a class="gallery__link-image" href="#" aria-label="Перейти на страницу фото.">
-                <picture>
-                <!-- добавить фото с адаптацией -->
-                  <img src="images/photo-1-desktop.jpg@1x.jpg" width="1200" height="400" alt="">
+                <picture> <!-- доделать-->
+                  <!-- <source media="(min-width: 1200px)" srcset="images/photo-city-desktop@1x@1x.jpg#sedona-advantages-desktop 1x, images/photo-city-desktop@1x@2x.jpg#sedona-advantages-desktop@2x 2x" width="1200" height="400"> -->
+                  <source media="(min-width: 768px)" srcset="images/gallery-tablet1@1x.jpg#gallery-tablet1@1x, images/gallery-tablet1@2x.jpg#gallery-tablet1@2x" width="548" height="400">
+                  <img class="gallery__photo" src="images/gallary-mobale1@1x.jpg" srcset="images/gallary-mobale1@2x.jpg#gallary-mobile1x2" width="280" height="280" alt="Фото города Седона с заведенями">
                 </picture>
               </a>
               <figcaption class="gallery__item-caption">
@@ -133,6 +135,7 @@
             </figure>
           </div>
         </section>
+
          <section class="video__wrapper"> <!--переделать блок -->
             
                 <!-- <h2 class="video-hidden">Фото и видео</h2>

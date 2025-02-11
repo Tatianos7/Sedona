@@ -88,53 +88,70 @@
                 <p class="gallery__description">неродные просторы
                   <span class="gallery__author">Автор фото: Борис</span>
                 </p>
+                
                 <button class="gallery__likes-quantity" type="button">
                   1350</button>
+                  <svg class="gallery__icon-like" width="23" height="21">
+                    <use xlink:href="icons/stack.svg#like-icon"></use>
+                  </svg> 
               </figcaption>
             </figure>
             <figure class="gallery__item-wrapper">
               <a class="gallery__link-image" href="#" aria-label="Перейти на страницу фото.">
                 <picture>
                 <!-- добавить фото с адаптацией -->
-                  <img src="images/photo-2-desktop.jpg@1x.jpg" width="400" height="267" alt="">
-                </picture>
-              </a>
-              <figcaption class="gallery__item-caption">
-                <p class="gallery__description">неродные просторы
-                  <span class="gallery__author">Автор фото: Борис</span>
-                </p>
-                <button class="gallery__likes-quantity" type="button">
-                  1350</button>
-              </figcaption>
-            </figure>
-            <figure class="gallery__item-wrapper">
-              <a class="gallery__link-image" href="#" aria-label="Перейти на страницу фото.">
-                <picture>
-                  <!-- добавить фото с адаптацией -->
-                  <img src="images/photo-3-desktop.jpg@1x.jpg" width="400" height="267" alt="">
+                  <source media="(min-width: 1200px)" srcset="images/gallery-desctop2@1x.jpg#gallery-desctop1x, images/gallery-desctop2@2x.jpg#gallery-desctop2x2x" width="400" height="267">
+                  <source media="(min-width: 768px)" srcset="images/gallery-tablet2@1x.jpg#gallery-tablet2@1x, images/gallery-tablet2@2x.jpg#gallery-tablet2@2x" width="324" height="267">
+                  <img class="gallery__photo" src="images/gallery-mobile2@1x.jpg" width="280" height="280" alt="">
                 </picture>
               </a>
               <figcaption class="gallery__item-caption">
                 <p class="gallery__description">местная растительность
-                  <span class="gallery__author">Автор фото: Юлиан</span>
+                  <span class="gallery__author">Автор фото: Сергей</span>
                 </p>
                 <button class="gallery__likes-quantity" type="button">
                   143</button>
+                  <svg class="gallery__icon-like" width="23" height="21">
+                    <use xlink:href="icons/stack.svg#like-icon"></use>
+                  </svg> 
               </figcaption>
             </figure>
             <figure class="gallery__item-wrapper">
               <a class="gallery__link-image" href="#" aria-label="Перейти на страницу фото.">
                 <picture>
-                  <!-- добавить фото с адаптацией -->
-                  <img src="images/photo-4-desktop.jpg@1x.jpg" width="400" height="267" alt="">
+                  <source media="(min-width: 1200px)" srcset="images/gallery-desktop3@1x.jpg#gallery-desktop1x, images/gallery-desktop3@2x.jpg#gallery-desktop3x2x" width="400" height="267">
+                  <source media="(min-width: 768px)" srcset="images/gallery-tablet3@1x.jpg#gallery-tablet3@1x, images/gallery-tablet3@2x.jpg#gallery-tablet3@2x" width="324" height="267">
+                  <img class="gallery__photo" src="images/gallery-mobile3@1x.jpg" width="280" height="280" alt="">
                 </picture>
               </a>
               <figcaption class="gallery__item-caption">
                 <p class="gallery__description">дорога на север
-                  <span class="gallery__author">Автор фото: Глеб</span>
+                  <span class="gallery__author">Автор фото: Петр</span>
                 </p>
                 <button class="gallery__likes-quantity" type="button">
                   96</button>
+                  <svg class="gallery__icon-like" width="23" height="21">
+                    <use xlink:href="icons/stack.svg#like-icon"></use>
+                  </svg> 
+              </figcaption>
+            </figure>
+            <figure class="gallery__item-wrapper">
+              <a class="gallery__link-image" href="#" aria-label="Перейти на страницу фото.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/gallery-desctop4@1x.jpg#gallery-desctop1x, images/gallery-desctop4@2x.jpg#gallery-desctop4x2x" width="400" height="267">
+                  <source media="(min-width: 768px)" srcset="images/gallery-tablet4@1x.jpg#gallery-tablet4@1x, images/gallery-tablet4@2x.jpg#gallery-tablet4@2x" width="324" height="267">
+                  <img class="gallery__photo" src="images/gallery-mobile4@1x.jpg" width="280" height="280" alt="">
+                </picture>
+              </a>
+              <figcaption class="gallery__item-caption">
+                <p class="gallery__description">мост дьявола
+                  <span class="gallery__author">Автор фото: Антон</span>
+                </p>
+                <button class="gallery__likes-quantity" type="button">
+                  254</button>
+                  <svg class="gallery__icon-like" width="23" height="21">
+                    <use xlink:href="icons/stack.svg#like-icon"></use>
+                  </svg> 
               </figcaption>
             </figure>
           </div>

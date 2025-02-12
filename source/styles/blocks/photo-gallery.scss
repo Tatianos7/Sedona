@@ -9,12 +9,10 @@
 /* Базовые стили */
 .gallery__list {
     display: grid;
-    // max-width: 1200px;
     margin: 0 auto;
     @media (min-width: 768px) {
       margin-left: 60px;
       margin-right: 60px;
-      // background-color: $lightgrey;
     }
 
     @media (min-width: 1200px) { 
@@ -34,11 +32,6 @@
     .gallery__list {
       grid-template-columns: repeat(2, 1fr);
     }
-    
-    // .gallery__item-wrapper:not(:first-child) {
-    //   grid-column: auto;
-    //   // margin: 0;
-    // }
 
     .gallery__item-wrapper {
         margin: 0;
@@ -71,9 +64,6 @@
       flex-direction: row;
       margin-left: 20px;
     }
-    @media (min-width: 1200px) {
-        
-    }
   }
   
   .gallery__description {
@@ -86,58 +76,27 @@
   }
   
   .gallery__author {
-    // display: block;
     font-weight: normal;
     margin-top: 15px;
     margin-bottom: 10px;
   }
-  
-  /* Лайки */ //переделать на флексы и дать обертку лайку и числу
-//   .gallery__likes-quantity {
-//     border: none; 
-//     outline: none;
-//     width: 61px;
-//     height: 24px;
-//     background: $whate;
-//     font-weight: bold;
-//     margin-left: 15px;
-//     font-size: 14px;
-//     text-transform: uppercase;
-//     font-family: "PT Sans", "Arial", sans-serif;
-//     // background: transparent;
 
-//       @media (min-width: $tablet-width) {
-//         position: relative;
-//         left: -15px;
-//         padding: 0;
-//         margin: 0;
-//         background: $lightgrey;
-//       }
-//   }
+  .gallery__likes-conteiner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
 
-//   .gallery__icon-like { // иконка лайк
-//     position: relative;
-//     top: -25px;
-//     right: 0px;
-//     @media (min-width: $tablet-width) {
-//       // top: -5px;
-//       // right: 60px;
-//     }
-//   }
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+    }
+  }
+  .gallery__likes-quantity {
+    border: none;
+    outline: none;
+    background: inherit;
+    font-weight: bold;
+    margin-left: 15px;
+  }
 
-//   @media (min-width: $tablet-width) {
-//     .gallery__item-wrapper:first-child .gallery__likes-quantity{
-//       position: relative;
-//       right: -80px;
-//       margin: 0;
-//       padding: 0;
-//     }
-
-//     .gallery__item-wrapper:first-child .gallery__icon-like {
-//       top: -5px;
-//       right: 100px;
-//     }
-// }
-  
  
-  

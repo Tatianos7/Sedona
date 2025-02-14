@@ -164,14 +164,33 @@
         </section>
 
          <section class="video__wrapper"> <!--переделать блок -->
-            
-                <!-- <h2 class="video-hidden">Фото и видео</h2>
+                <h2 class="video-hidden">Фото и видео</h2>
                 <p class="video__slogan">все еще сомневаетесь?</p>
                 <p class="video__intro">смотрите видеопрезентацию и скорее за билетами, пока они <br> пока они не подорожали в очередной раз</p>
-            
-          <div class="video-play">
-            <video src="#" poster="images/video-desktop.jpg@1x.jpg" width="320" height="427" controls></video>
-          </div> -->
+                <div class="video-conteiner">
+                <picture>
+                  <source media="(min-width: 1400px)" srcset="images/video-desktop@1x.jpg#video-desktop1x, images/video-desktop@2x.jpg#video-desktop4x2x" width="800" height="500">
+                  <source media="(min-width: 768px)" srcset="images/video-tablet@1x.jpg#video-tablet@1x, images/video-tablet@2x.jpg#video-tablet@2x" width="648" height="500">
+                  <img class="video__image" src="images/video-mobile@1x.jpg" width="320" height="201" alt="">
+                </picture>
+                <div class="video-controls">
+            <button class="control-button start-button" title="Вернуться в начало">
+              <span>&#8634;</span>
+            </button>
+         
+            <!-- Прогресс-бар -->
+            <div class="progress-bar">
+              <div class="progress"></div>
+              <div class="scrubber"></div>
+            </div>
+   
+          
+            <!-- Кнопка "Расширить экран" -->
+            <button class="control-button fullscreen-button" title="Расширить экран">
+              <span>&#9974;</span>
+            </button>
+          </div>
+        </div>
         </section>
       </main>
 

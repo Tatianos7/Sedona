@@ -1,12 +1,11 @@
-.page-main__block {
-    background-color: aqua;
-    background-image: url("/build/icons/stack.svg#divider-mobale"), url("/source/images/bg-mobile@1x.jpg");
+.page-main__background {
+    background-color: rgba(131, 179, 211, .5);
+    // background-image: url("../icons"), url("../") ;
     background-repeat: no-repeat;
     background-position: bottom, center;
     background-size: 100% 57px, cover;
     padding: 90px 19px 85px;
 }
-
 
 // @media (min-width: $tablet-width) {
 //         background-image: url("/source/images/divider-tablet.svg"), url("/source/images/back-tablet@1x.jpg"); 

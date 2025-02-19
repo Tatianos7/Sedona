@@ -1,7 +1,6 @@
 .video__wrapper{
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 40px;
   text-align: center; 
 
   @media (min-width: $tablet-width) {
@@ -10,15 +9,14 @@
 }
 
 .video-conteiner {
-  // position: relative;
-  // width: 100%;
-  // max-width: 800px; /* Максимальная ширина контейнера */
-  // margin: 0 auto;
-  // overflow: hidden;
   @media (min-width: $tablet-width) {
   margin-left: 60px;
   margin-right: 60px;
   }
+  @media (min-width: $desktop-width) {
+    margin-left: 200px;
+    margin-right: 200px;
+    }
 }
 
 /* Основные стили для блока управления */
@@ -34,7 +32,7 @@
   padding: 0 10px;
   box-sizing: border-box;
   @media (max-width: $tablet-width) {
-      height: 40px;
+      height: 70px;
       padding: 0 5px;
     }
     @media (max-width: $desktop-width) {
@@ -44,7 +42,7 @@
 
 .video__image {
   width: 100%;
-  display: block;
+  display: block; 
 }
 
 /* Стили для кнопок */
@@ -108,10 +106,14 @@
   }
 }
 
+.video__title-block {
+  margin-bottom: 30px;
+}
 
-
-// .video-play {
-//     @media (min-width: $tablet-width) {
-//         min-width: 100%;
-//       }
-//     }
+.video__intro {
+  @media (max-width: 600px) {
+    br {
+      display: none;
+  }
+  }
+}

@@ -2,8 +2,7 @@
     width: 100%;
     margin: 0 auto;
     margin-bottom: 40px;
-    text-align: center;
-   
+    text-align: center;  
 }
 
 /* Базовые стили */
@@ -118,6 +117,7 @@
     @media (min-width: $tablet-width) {
       margin-right: 20px;
     }
+    
   }
 
   .gallery__likes-quantity {
@@ -132,8 +132,8 @@
     }
   }
 
-  .gallery__icon-like {
-    @media (min-width: $desktop-width) {      
-        fill: #FFFFFF;
+  .gallery__icon-like svg { // перезалить иконку, возможно залить 2 иконки в разном цвете и белую поставить через background
+    @media (min-width: $desktop-width) { 
+      fill: white;
   }}  
   

@@ -1,0 +1,33 @@
+.search-form {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 50px 50px 50px 60px;
+  
+    row-gap: 40px;
+  }
+  
+  .search-form-date {
+    grid-column: 1 / -1;
+  }
+  
+  .search-form-date .field-input {
+    background-repeat: no-repeat;
+    background-position: right 17px top 50%;
+
+  }
+  
+  .search-form-date .field-input:not(:placeholder-shown):focus {
+    outline: none;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+  }
+  
+  .search-form-button {
+    grid-column: 1 / -1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $whate;
+    background-color: $blue;
+    border: none;
+  }

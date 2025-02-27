@@ -4,7 +4,7 @@
   
   .feedback__section-title {
     font-size: 18px;
-    margin: 30px 0 15px 0;
+    margin: 20px 0 15px 0;
     text-align: center;
   }
   
@@ -49,13 +49,25 @@
     margin: 0;
     margin-right: 20px;
   }
-
+  
   input[type="radio"] {
     accent-color: $black;
     width: 48px;
     height: 48px;
   }
 
+  input[type="checkbox"]{
+    accent-color: $whate;
+    width: 48px;
+    height: 48px;
+    
+  }
+
+  .feedback__checkbox-input {
+    // accent-color: $lightgrey;
+    margin-right: 30px;
+   
+}
   
   .feedback__radio-group,
   .feedback__checkbox-group {
@@ -69,16 +81,20 @@
     align-items: center;
     padding: 10px 10px 10px 0;
     max-width: fit-content; // от случайного нажатия на чекбокс.
+    text-transform: capitalize; 
+    font-weight: bold;
+    font-size: 18px;
   }
   
   .feedback__textarea {
+    background-color: $lightgrey;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
     height: 100px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
     resize: vertical;
+    margin-bottom: 50px;
   }
 
   

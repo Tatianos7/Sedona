@@ -1,0 +1,143 @@
+.feedback__section {
+    margin-bottom: 20px;
+  }
+  
+  .feedback__section-title {
+    font-size: 18px;
+    margin: 20px 0 15px 0;
+    text-align: center;
+  }
+  
+  .feedback__input-group {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+  }
+
+  .feedback__input-phone,
+  .feedback__input-email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback__label {
+    display: block;
+    font-size: 14px;
+    margin-right: 10px; 
+  }
+
+  .feedback__label-phone,
+  .feedback__label-email {
+    margin: 15px 0 8px 21px ; 
+  }
+  
+  .feedback__input {
+    width: 100%;
+    height: 58px;
+    padding: 10px 10px 10px 21px;
+    border: none;
+    font-size: 14px;
+    background-color: $lightgrey;
+  }
+  
+  .feedback__input[readonly] {
+    background-color: $lightgrey;
+    cursor: not-allowed;
+  }
+
+  .feedback__radio-input {
+    margin: 0;
+    margin-right: 20px;
+  }
+  
+  input[type="radio"] {
+    accent-color: $black;
+    width: 48px;
+    height: 48px;
+  }
+
+  input[type="checkbox"]{
+    accent-color: $whate;
+    width: 48px;
+    height: 48px;
+    
+  }
+
+  .feedback__checkbox-input {
+    // accent-color: $lightgrey;
+    margin-right: 30px;
+   
+}
+  
+  .feedback__radio-group,
+  .feedback__checkbox-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback__radio-label,
+  .feedback__checkbox-label {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 0;
+    max-width: fit-content; // от случайного нажатия на чекбокс.
+    text-transform: capitalize; 
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .feedback__textarea {
+    background-color: $lightgrey;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    resize: vertical;
+    margin-bottom: 50px;
+  }
+
+  
+//   /* Адаптация для планшетов */
+//   @media (max-width: $tablet-width) {
+//     .feedback {
+//       padding: 15px;
+//     }
+  
+//     .feedback__title {
+//       font-size: 22px;
+//     }
+  
+//     .feedback__section-title {
+//       font-size: 16px;
+//     }
+  
+//     .feedback__input,
+//     .feedback__textarea {
+//       font-size: 13px;
+//     }
+//   }
+  
+//   /* Адаптация для мобильных устройств */
+//   @media (max-width: $mobile-width-only) {
+//     .feedback {
+//       padding: 10px;
+//     }
+  
+//     .feedback__title {
+//       font-size: 20px;
+//     }
+  
+//     .feedback__section-title {
+//       font-size: 14px;
+//     }
+  
+//     .feedback__input,
+//     .feedback__textarea {
+//       font-size: 12px;
+//     }
+  
+//     .feedback__submit-button {
+//       font-size: 14px;
+//     }
+//   }

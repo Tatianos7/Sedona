@@ -67,12 +67,13 @@
       <div class="feedback">
         <h1 class="feedback__title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
         <p class="feedback__subtitle">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
-        <hr class="feedback__line">
+        <hr class="feedback__line"> 
     
         <form class="feedback__form">
     
           <!-- Блок "Представьтесь" -->
-          <div class="feedback__section">
+          <div class="feedback__block">
+          <div class="feedback__section feedback__section--introduce">
             <h2 class="feedback__section-title">ПРЕДСТАВЬТЕСЬ:</h2>
             <div class="feedback__input-group">
               <label for="name" class="feedback__label">ИМЯ*:</label>
@@ -87,10 +88,10 @@
               <input type="text" id="patronymic" class="feedback__input" value="Александрович" readonly>
             </div>
           </div>
-          <hr class="feedback__line">
     
           <!-- Блок "Контактная информация" -->
-          <div class="feedback__section">
+          <div class="feedback__section feedback__section--contact">
+            <hr class="feedback__line">
             <h2 class="feedback__section-title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h2>
             <div class="feedback__input-phone">
               <label for="phone" class="feedback__label-phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
@@ -105,7 +106,7 @@
           
 
                     <!-- Блок "Общее впечатление" -->
-                    <div class="feedback__section">
+                    <div class="feedback__section feedback__section--impression">
                       <h2 class="feedback__section-title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
                       <div class="feedback__radio-group">
                         <label class="feedback__radio-label">
@@ -119,6 +120,7 @@
                         </label>
                       </div>
                     </div>
+                  </div>
                     <hr class="feedback__line">
     
           <!-- Блок "Посещенные достопримечательности" -->

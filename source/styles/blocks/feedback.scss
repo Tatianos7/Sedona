@@ -2,6 +2,11 @@
     background-color: #fff;
     padding: 20px;
     max-width: 100%;
+    @media (min-width: $tablet-width) {
+      margin: 0 60px 0 60px ;
+      padding: 0;
+  }
+
   }
   
   .feedback__title {

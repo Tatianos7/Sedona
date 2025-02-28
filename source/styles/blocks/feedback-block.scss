@@ -1,0 +1,7 @@
+.feedback__block {
+    @media (min-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}

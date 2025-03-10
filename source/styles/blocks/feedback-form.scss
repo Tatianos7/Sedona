@@ -11,11 +11,31 @@
    grid-row: 1/2;
   }
 }
-  
-  .feedback__section-title {
-    font-size: 18px;
-    margin: 20px 0 15px 0;
-    text-align: center;
+
+.feedback__section-title {
+  font-size: 18px;
+  margin: 20px 0 15px 0;
+  text-align: center;
+}
+
+.feedback__section-radio {
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
+  @media (min-width: $desktop-widthh) {
+    
+    }
+}
+    
+.feedback__section-performance {
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    margin-left: 60px;
+    }
+    @media (min-width: $desktop-widthh) {
+      text-align: start;
+      margin-left: 60px;
+      }
   }
   
   .feedback__input-group {
@@ -85,7 +105,7 @@
   .feedback__radio-group,
   .feedback__checkbox-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
   }
 
   @media (min-width: $tablet-width) { //почему то криво стоит
@@ -102,7 +122,7 @@
     align-items: center;
     padding: 10px 10px 10px 0;
     max-width: fit-content; // от случайного нажатия на чекбокс.
-    text-transform: capitalize; 
+    text-transform: initial; 
     font-weight: bold;
     font-size: 18px;
   }

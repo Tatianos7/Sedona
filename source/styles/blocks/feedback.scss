@@ -3,12 +3,16 @@
     padding: 20px;
     max-width: 100%;
     @media (min-width: $tablet-width) {
+      position: relative;
       margin: 0 60px 0 60px ;
       padding: 0;
   }
-
+  // @media (min-width: $desktop-width) {
+  //   width: 952px;
+  //   margin: 0 auto;
+  // }
   }
-  
+
   .feedback__title {
     font-size: 24px;
     margin: 20px 0 35px 0;
@@ -29,15 +33,15 @@
    color: $mediumgrey;
   }
 
-  //  .feedback__line-tablet {
-  //   position: relative;
+  //  .feedback__line-tablet { приделать через флекс к блоку 
   //   @media (min-width: $tablet-width) {
+  //     position: absolute;
+  //     left: 410px;
+  //     top: 130px;
   //     width: 1px;
   //     height: 240px;
   //     color: $mediumgrey;
-  //     position: absolute;
-  //     left: 410px;
-  //     top: 630px;
+     
   //  }
   // }
  

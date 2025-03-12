@@ -3,43 +3,27 @@
     padding: 20px;
     max-width: 100%;
     @media (min-width: $tablet-width) {
+      position: relative;
       margin: 0 60px 0 60px ;
       padding: 0;
   }
+  }
 
+.feedback__title {
+  position: relative;
+  font-size: 24px;
+  margin: 70px 0 35px 0;
+  text-align: center;
   }
-  
-  .feedback__title {
-    font-size: 24px;
-    margin: 20px 0 35px 0;
-    text-align: center;
-  }
-  
+
   .feedback__subtitle {
     font-size: 14px;
     color: #666;
     text-align: center;
     margin-bottom: 20px;
   }
+ 
 
-   // как сделать по всей ширине экрана линию?
-  .feedback__line {
-   width: 100%;
-   height: 1px;
-   color: $mediumgrey;
-  }
-
-  //  .feedback__line-tablet {
-  //   position: relative;
-  //   @media (min-width: $tablet-width) {
-  //     width: 1px;
-  //     height: 240px;
-  //     color: $mediumgrey;
-  //     position: absolute;
-  //     left: 410px;
-  //     top: 630px;
-  //  }
-  // }
  
   
 

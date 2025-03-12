@@ -67,7 +67,6 @@
       <div class="feedback">
         <h1 class="feedback__title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
         <p class="feedback__subtitle">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
-        <hr class="feedback__line"> 
     
         <form class="feedback__form">
     
@@ -88,10 +87,11 @@
               <input type="text" id="patronymic" class="feedback__input" value="Александрович" readonly>
             </div>
           </div>
-    
+
+         
+
           <!-- Блок "Контактная информация" -->
           <div class="feedback__section feedback__section--contact">
-            <hr class="feedback__line">
             <h2 class="feedback__section-title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h2>
             <div class="feedback__section-info">
             <div class="feedback__input-phone">
@@ -104,8 +104,6 @@
             </div>
           </div>
           </div>
-          <!-- <hr class="feedback__line"> -->
-          
 
                     <!-- Блок "Общее впечатление" -->
                     <div class="feedback__section feedback__section--impression">
@@ -123,11 +121,10 @@
                       </div>
                     </div>
                   </div>
-                    <hr class="feedback__line feedback__line-tablet">
-    
+
           <!-- Блок "Посещенные достопримечательности" -->
           <div class="feedback__section">
-            <h2 class="feedback__section-title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
+            <h2 class="feedback__section-title">ПОСЕЩЕННЫЕ <br> ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
             <div class="feedback__checkbox-group">
               <label class="feedback__checkbox-label">
                 <input type="checkbox" name="attraction" class="feedback__checkbox-input" checked> Мост Дьявола
@@ -143,8 +140,7 @@
               </label>
             </div>
           </div>
-          <hr class="feedback__line">
-    
+
           <!-- Блок "Опишите свои эмоции" -->
           <div class="feedback__section">
             <h2 class="feedback__section-title">ОПИШИТЕ СВОИ ЭМОЦИИ:</h2>
@@ -198,6 +194,7 @@
         </div>
       </div>
     </footer>
+
     <script> 
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');

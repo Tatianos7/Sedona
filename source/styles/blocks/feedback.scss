@@ -7,7 +7,11 @@
       margin: 0 60px 0 60px ;
       padding: 0;
   }
-  }
+  @media (min-width: $desktop-width) {
+    margin: 0 120px 0 120px ;
+    padding: 0;
+}
+}
 
 .feedback__title {
   position: relative;

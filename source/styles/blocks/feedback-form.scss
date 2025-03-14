@@ -19,68 +19,13 @@
    }
      }
 
-
-     // линии с заголовками
-  
-// .feedback__section-title::before,
-// .feedback__section-title::after {
-//   @media (min-width: $tablet-width) {
-//     content: "";
-//     display: inline-block;
-//     vertical-align: middle;
-//     width: 28%;
-//     height: 1px;
-//     background: linear-gradient(to right, transparent, #ccc),
-//                 linear-gradient(to left, transparent, #ccc);
-//   }
-//   @media (min-width: $desktop-width) {
-//     width: 100%;
-// }
-// }
-
-// .feedback__section-attractions::before,
-// .feedback__section-attractions::after {
-//   @media (min-width: $tablet-width) {
-//     content: "";
-//     display: inline-block;
-//     vertical-align: middle;
-//     width: 20%;
-//     height: 1px;
-//     background: linear-gradient(to right, transparent, #ccc),
-//                 linear-gradient(to left, transparent, #ccc);
-//   }
-//   @media (min-width: $desktop-width) {
-//     width: 100%;
-// }
-// }
-
-// .feedback__section-performance::before,
-// .feedback__section-performance::after,
-// .feedback__section-radio::before,
-// .feedback__section-radio::after {
-//   @media (min-width: $tablet-width) {
-// display: none;
-// }
-// }
-
-// .feedback__section-title::before {
-//   margin-right: 1rem;
-// }
-
-// .feedback__section-title::after {
-//   margin-left: 1rem;
-// }
-
-.feedback__section:not(:last-child)::before {
+.feedback__section::before {
   content: "";
   display: block;
   width: 100%;
   height: 1px;
   background: #ccc;
   margin: 1.5rem 0;
-  // @media (min-width: $tablet-width) {
-  //   display: none;
-  //  }
 }
 
 .feedback__section--impression::before {
@@ -90,9 +35,15 @@
   height: 1px;
   background: #ccc;
   margin: 1.5rem 0;
-  // @media (min-width: $tablet-width) {
-  //   display: none;
-  //  }
+  @media (min-width: $tablet-width) { 
+    display: none;
+   }
+}
+
+.feedback__section--introduce::before {
+  @media (min-width: $tablet-width) {
+    display: none;
+   }
 }
 
 .feedback__section--impression::after {
@@ -163,7 +114,6 @@
     flex-direction: column;
     @media (min-width: $desktop-width) {
       flex-direction: row;
-
       }
   }
 
@@ -176,7 +126,7 @@
   .feedback__label-phone,
   .feedback__label-email {
     margin: 15px 40 8px 21px ;
-
+    text-align:start;
   }
   
   .feedback__input {
@@ -250,6 +200,10 @@
     text-transform: initial; 
     font-weight: bold;
     font-size: 18px;
+  }
+
+  .feedback__radio-label {
+    width: 100%;
   }
   
   .feedback__textarea {

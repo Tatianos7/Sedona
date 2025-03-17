@@ -1,4 +1,4 @@
-.modal {
+.modal__hotel-search {
     position: fixed;
     top: 0;
     right: 0;
@@ -16,7 +16,7 @@
     display: grid;
   }
   
-  .modal-container {
+  .modal__container {
     display: grid;
     grid-template-columns: 1fr min-content;
     row-gap: 54px;
@@ -29,7 +29,7 @@
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   }
   
-  .modal-close {
+  .modal__close {
     width: 53px;
     height: 53px;
     padding: 0;
@@ -39,37 +39,37 @@
     border-radius: 50%;
   }
   
-  // .modal-close::after {
+  // .modal__close::after {
   //   content: "";
   
   //   display: block;
     
   // }
   
-  .modal-close:hover,
-  .modal-close:active {
+  .modal__close:hover,
+  .modal__close:active {
     background-color: $whate;
   }
   
-  .modal-close:active::after {
+  .modal__close:active::after {
     opacity: 0.3;
   }
   
-  .modal-close:focus:not(:active) {
+  .modal__close:focus:not(:active) {
     outline: 3px solid $blue;
     outline-offset: 0;
   }
   
-  .modal-title {
+  .modal__title {
     align-self: center;
     margin: 0;
   }
   
-  .modal-content {
+  .modal__content {
     position: relative;
     grid-column: 1 / -1;
   }
 
-  .modal-close__icon {
+  .modal__close__icon {
     z-index: 6;
   }

@@ -1,7 +1,7 @@
 .advantages__list {
-    padding: 0;
-    margin: 0;
-    counter-reset: advantages;
+  padding: 0;
+  margin: 0;
+  counter-reset: advantages;
       
     @media (min-width: $tablet-width) {
       display: grid;
@@ -31,9 +31,11 @@
   }
   
   .advantages__description {
+    position: relative;
     height: 211px;
     background-color: $blue;
     color: $whate;   
+    padding: 35px 20px;
 
     @media (min-width: $tablet-width) {
       height: 100%;
@@ -42,16 +44,28 @@
 
   .advantages__description::before {
     content: "- №" counter(advantages) " -";
+    position: absolute;
+    top: 90px;
+    left: 45%;
   }
 
   .advantages__description-favor::before {
     content: "- №" counter(advantages) " -";
+    position: absolute;
+    top: 75px;
+    left: 42%;
   }
   
   .advantages__title {
     margin: 0;
-    padding-top: 55px;
-    padding-bottom: 45px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .advantages__title-favor {
+    margin: 0;
+    margin-bottom: 80px;
     text-align: center;
     font-size: 18px;
   }
@@ -63,17 +77,28 @@
   }
   
   .advantages__description-favor {
+    position: relative;
     background-color: $mediumgrey;
+    padding: 26px;
+    border-bottom: 2px solid $whategrey; // как убрать бордер у последнего блока?
   }
   
+  // .advantages__description-favor:not(:last-child) { // почему не работает?
+  //   border-bottom: none;
+  // }
+
   .advantages__text {
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
     margin: 0;
     font-size: 14px;
-    font-weight: 21px;
+    line-height: 21px;
+  }
+
+  .advantages__text-favor {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
   }
   
   .advantages__image {

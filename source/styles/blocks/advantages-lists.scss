@@ -1,5 +1,5 @@
 .advantages__lists {
-    padding: 25px 20px 35px 20px;
+    padding: 25px 15px 35px 20px;
     list-style-type: none;
     br {
         display: none;
@@ -51,11 +51,29 @@
 }
 
 .advantages__items-title {
+    font-size: 18px;
+    line-height: 26px;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 5px;    
+    padding-bottom: 10px;    
+    @media (min-width: $tablet-width) {
+        font-size: 21px;
+        padding-bottom: 20px; 
+    }
 }
 
 .advantages__items-text {
     margin: 0;
+    @media (min-width: $tablet-width) {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    br {
+        display: none;
+      }
+      @media (min-width: $tablet-width) {
+        br {
+          display: block;
+        }
+      }
 }

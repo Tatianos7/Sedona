@@ -42,40 +42,6 @@
     }
   }
 
-  .advantages__description::before {
-    content: "- №" counter(advantages) " -";
-    position: absolute;
-    top: 90px;
-    left: 45%;
-  }
-
-  .advantages__description-favor::before {
-    content: "- №" counter(advantages) " -";
-    position: absolute;
-    top: 75px;
-    left: 42%;
-  }
-  
-  .advantages__title {
-    margin: 0;
-    margin-bottom: 80px;
-    text-align: center;
-    font-size: 18px;
-  }
-
-  .advantages__title-favor {
-    margin: 0;
-    margin-bottom: 80px;
-    text-align: center;
-    font-size: 18px;
-  }
-
-  .advantages__photo {
-    @media (min-width: $tablet-width) {
-      grid-column: 2 / -1;
-    }
-  }
-  
   .advantages__description-favor {
     position: relative;
     background-color: $mediumgrey;
@@ -87,6 +53,82 @@
   //   border-bottom: none;
   // }
 
+  .advantages__description::before {
+    content: "- №" counter(advantages) " -";
+    position: absolute;
+    top: 90px;
+    left: 45%;
+    @media (min-width: $tablet-width) {
+      top: 110px;
+      left: 40%;
+    }
+    @media (min-width: $desktop-width) {
+      left: 45%;
+    }
+  }
+
+  .advantages__description-favor::before {
+    content: "- №" counter(advantages) " -";
+    position: absolute;
+    top: 75px;
+    right: 45%;
+    @media (min-width: $tablet-width) {
+      top: 100px;
+      right: 40%;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 45%;
+    }
+  }
+  
+  .advantages__title {
+    margin: 0;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    br {
+      display: none;
+    }
+    @media (min-width: $tablet-width) {
+      br {
+        display: block;
+      }
+    }
+    @media (min-width: $desktop-width) {
+      br {
+        display: block;
+      }
+    }
+  }
+
+  .advantages__title-favor {
+    margin: 0;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    br {
+      display: none;
+    }
+    @media (min-width: $tablet-width) {
+      br {
+        display: block;
+      }
+    }
+  }
+
+  .advantages__photo {
+    @media (min-width: $tablet-width) {
+      grid-column: 2 / -1; // как поменять мк=естами блоки
+    }
+}
+
+// .grid {
+//   grid-column: 3 / -1;
+// }
+  
   .advantages__text {
     text-align: center;
     margin: 0;
@@ -99,6 +141,14 @@
     margin: 0;
     font-size: 14px;
     line-height: 21px;
+    br {
+      display: none;
+    }
+    @media (min-width: $tablet-width) {
+      br {
+        display: block;
+      }
+    }
   }
   
   .advantages__image {

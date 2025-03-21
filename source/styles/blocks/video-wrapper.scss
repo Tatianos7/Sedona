@@ -107,13 +107,32 @@
 }
 
 .video__title-block {
-  margin-bottom: 30px;
+  padding: 32px 27px 32px 27px;
+}
+
+.video__slogan {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video__intro {
-  @media (max-width: 600px) {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 20px;
+  br {
+    display: none;
+}
+  @media (min-width: $tablet-width){
+    margin-bottom: 10px;
     br {
-      display: none;
+      display: block;
   }
   }
 }

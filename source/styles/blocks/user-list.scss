@@ -17,6 +17,8 @@
     border-top: 1px solid $whateblue;
     height: 56px;
     background-color: $blackblue;
+    text-transform: uppercase;
+    font-family: "PT Sans";
 
     @media (min-width: $tablet-width) {
       display: flex;

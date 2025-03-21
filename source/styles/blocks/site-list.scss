@@ -28,8 +28,9 @@
     padding: 17px 15px;
     padding-bottom: 13px;
     font-size: 18px;
-    border-top: 1px solid $whateblue;
-    border-bottom: 1px solid $mediumblue;
+    // border-top: 1px solid $whateblue;
+    // border-bottom: 1px solid $mediumblue;
+    text-transform: uppercase;
 
  @media (min-width: $tablet-width) {
      border: none;

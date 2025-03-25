@@ -38,7 +38,7 @@
   @media (min-width: $tablet-width) { 
     display: none;
    }
-}
+  }
 
 .feedback__section--introduce::before {
   @media (min-width: $tablet-width) {
@@ -104,18 +104,42 @@
     align-items: baseline;
     margin-bottom: 15px;
     @media (min-width: $tablet-width) {
-      margin-left: 58px;
-        }
+      width: 85%;
+      margin-left: 70px;
+      justify-content: flex-end
+    }
+  //   @media (min-width: $desktop-width) {
+  //     width: 90%;
+  //     justify-content: flex-end
+  // }
   }
 
   .feedback__input-phone,
   .feedback__input-email {
+    position: relative;
     display: flex;
     flex-direction: column;
     @media (min-width: $desktop-width) {
       flex-direction: row;
       }
   }
+
+  .feedback__button-phone,
+  .feedback__button-mail {
+    position: absolute;
+    top: 41px;
+    right: 0;
+    border: none;
+    width: 58px;
+    height: 58px;
+    background-color: $silvergrey;
+    @media (min-width: $tablet-width) {
+      top: 47px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
+}
 
   .feedback__label {
     display: block;
@@ -187,7 +211,6 @@
       grid-template-columns: repeat(4, 1fr);
       grid-row: 1/4;
     }  
-
   }
   
   .feedback__radio-label,
@@ -214,7 +237,7 @@
     border: none;
     font-size: 14px;
     resize: vertical;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     @media (min-width: $tablet-width){
       height: 160px;
     }   

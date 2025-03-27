@@ -1,20 +1,21 @@
 .feedback__submit-button {
-    width: 100%;
-    height: 58px;
-    padding: 10px;
-    margin-bottom: 60px;
-    background-color: $blue;
-    color: $whate;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    @media (min-width: $tablet-width) {
-      width: 324px;
-    }
+  width: 100%;
+  height: 58px;
+  padding: 10px;
+  margin-bottom: 60px;
+  background-color: $blue;
+  color: $whate;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
 }
 
-.feedback__submit-block { // подогнать экраны по размеру
+.feedback__submit-block {
+  // подогнать экраны по размеру
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;

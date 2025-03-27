@@ -1,9 +1,9 @@
 .search__wrapper {
-    width: 100%;
-    padding: 33 25px;
-    padding-bottom: 49px;
-    margin: 0 auto;
-    text-align: center;
+  width: 100%;
+  padding: 33 25px;
+  padding-bottom: 49px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .search__title {
@@ -22,12 +22,12 @@
   line-height: 24px;
   padding-bottom: 27px;
   br {
-display: none;
+    display: none;
   }
   @media (min-width: $tablet-width) {
     br {
       display: block;
-        }
+    }
   }
 }
 
@@ -37,7 +37,7 @@ display: none;
   height: 58px;
   border: none;
   background: $blue;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 21px;
   text-transform: uppercase;
   font-weight: bold;

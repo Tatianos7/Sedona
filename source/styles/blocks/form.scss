@@ -1,33 +1,27 @@
 .form {
-    max-width: 400px;
-    margin: 50px auto;
+  max-width: 400px;
+  margin: 50px auto;
 }
 
 .form__input {
-    position: relative;
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 8px;
-    border: 1px solid #ddd;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ddd;
 }
 
 .form__input--error {
-    border: 2px solid #ff4444 !important;
+  border: 2px solid #ff4444 !important;
 }
 
 .form__submit {
-    background: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
+  background: #2196f3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
 }
-
-
-
-
-
-

@@ -1,139 +1,139 @@
 .field {
-    display: flex;
-  }
-  
-  .field-title-info {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 20px;
-  }
-  
-  .field-input {
-    width: 100%;
-    margin: 0;
-    padding: 8px 20px;
-  
-    background-color: #f2f2f2;
-    border: 2px solid transparent;
-    border-radius: 4px;
-  
-    font-family: inherit;
-    font-size: 18px;
-  }
-  
-  .field-input:hover {
-    background-color: #e6e6e6;
-  }
-  
-  .field-input:focus {
-    background-color: #e6e6e6;
-    outline: 3px solid #83b3d3;
-  }
-  
-  .field-input-error {
-    border-color: $error;
-  }
-  
-  .field-input[disabled] {
-    opacity: 0.3;
-    background-color: #d3d3d3;
-  }
-  
-  .field-search {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    grid-template-rows: 50px;
-    column-gap: 15px;
-    row-gap: 4px;
-  }
-  
-  .field-search .field-title {
-    align-self: center;
-  
-    font-weight: 700;
-  }
-  
-  .field-search .field-input {
-    font-weight: 700;
-  }
-  
-  .field-message {
-    grid-column: 2 / -1;
-    text-transform: initial;
-    font-size: 16px;
-  }
-  
-  .field-message-error {
-    color: #ff5757;
-  }
-  
-  .field-info {
-    position: relative;
-  
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
-    margin-left: 10px;
-  
-    background-color: #83b3d3;
-    // background-repeat: no-repeat;
-    // background-position: 50% 50%;
-    border-radius: 50%;
-  }
-  
-  .field-info-text {
-    position: absolute;
-    top: calc(100% + 15px);
-    left: calc(50% - 128px);
-    z-index: 1;
-  
-    display: none;
-    width: 256px;
-    padding: 15px 20px 23px;
-  
-    color: #ffffff;
-    background-color: #333333;
-    border-radius: 10px;
-  
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  .field-info-text::before {
-    content: "";
-    position: absolute;
-    top: -9px;
-    left: calc(50% - 10px);
-  
-    width: 19px;
-    height: 9px;
-  }
-  
-  .field-info-text::after {
-    content: "";
-    position: absolute;
-    top: -25px;
-    right: 0;
-    left: 0;
-    height: 25px;
-  }
-  
-  .field-info:hover .field-info-text {
-    display: block;
-  }
+  display: flex;
+}
 
-  .field-input__arrival-date {
-    position: relative;
-    top: -38px;
-    left: 540px;
-  }
+.field-title-info {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
 
-  .field-input__departure-date {
-    position: absolute;
-    top: 105px;
-    left: 540px;
-  }
+.field-input {
+  width: 100%;
+  margin: 0;
+  padding: 8px 20px;
 
-  .field-info__info {
-    margin: 4px;
-  }
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.field-input:hover {
+  background-color: #e6e6e6;
+}
+
+.field-input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.field-input-error {
+  border-color: $error;
+}
+
+.field-input[disabled] {
+  opacity: 0.3;
+  background-color: #d3d3d3;
+}
+
+.field-search {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-rows: 50px;
+  column-gap: 15px;
+  row-gap: 4px;
+}
+
+.field-search .field-title {
+  align-self: center;
+
+  font-weight: 700;
+}
+
+.field-search .field-input {
+  font-weight: 700;
+}
+
+.field-message {
+  grid-column: 2 / -1;
+  text-transform: initial;
+  font-size: 16px;
+}
+
+.field-message-error {
+  color: #ff5757;
+}
+
+.field-info {
+  position: relative;
+
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  margin-left: 10px;
+
+  background-color: #83b3d3;
+  // background-repeat: no-repeat;
+  // background-position: 50% 50%;
+  border-radius: 50%;
+}
+
+.field-info-text {
+  position: absolute;
+  top: calc(100% + 15px);
+  left: calc(50% - 128px);
+  z-index: 1;
+
+  display: none;
+  width: 256px;
+  padding: 15px 20px 23px;
+
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.field-info-text::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: calc(50% - 10px);
+
+  width: 19px;
+  height: 9px;
+}
+
+.field-info-text::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: 0;
+  left: 0;
+  height: 25px;
+}
+
+.field-info:hover .field-info-text {
+  display: block;
+}
+
+.field-input__arrival-date {
+  position: relative;
+  top: -38px;
+  left: 540px;
+}
+
+.field-input__departure-date {
+  position: absolute;
+  top: 105px;
+  left: 540px;
+}
+
+.field-info__info {
+  margin: 4px;
+}

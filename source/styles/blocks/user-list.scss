@@ -1,45 +1,44 @@
 .user-list {
-    @media (min-width: $tablet-width) {
-      list-style-type: none;
-    }
+  @media (min-width: $tablet-width) {
+    list-style-type: none;
   }
+}
 
 .user-list__login {
-    position: relative;
-    display: block;
-    padding: 17px 15px;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: bold;
-    color: $whate;
-    text-decoration: none;
-    text-align: center;
-    border-top: 1px solid $whateblue;
-    height: 56px;
-    background-color: $blackblue;
-    text-transform: uppercase;
-    font-family: "PT Sans";
+  position: relative;
+  display: block;
+  padding: 17px 15px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $whate;
+  text-decoration: none;
+  text-align: center;
+  border-top: 1px solid $whateblue;
+  height: 56px;
+  background-color: $blackblue;
+  text-transform: uppercase;
+  font-family: "PT Sans";
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-      align-items: center;
-      padding: 10px 30px;
-      font-size: 14px;
-      color: $black;
-      border: none;
-      background-color: inherit;
-
-      }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 14px;
+    color: $black;
+    border: none;
+    background-color: inherit;
   }
+}
 
-  .user-list__login-icon {
-    fill: $whate;
-    opacity: 0.5;
-    margin-right: 3px;
-    text-align: center;
-    text-transform: uppercase;
+.user-list__login-icon {
+  fill: $whate;
+  opacity: 0.5;
+  margin-right: 3px;
+  text-align: center;
+  text-transform: uppercase;
 
-    @media (min-width: $tablet-width) {
-      fill: $black;
-      }
+  @media (min-width: $tablet-width) {
+    fill: $black;
   }
+}

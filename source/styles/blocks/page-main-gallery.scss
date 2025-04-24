@@ -1,17 +1,17 @@
 .page-main__gallery-background {
-    height: 158px;
-    background-color: aqua;
+  height: 158px;
+  background-color: aqua;
 
-    @media (min-width: $tablet-width) {
-        height: 290px;
-    }
-    @media (min-width: $desktop-width) {
-        height: 287px;
-    }
+  @media (min-width: $tablet-width) {
+    height: 290px;
+  }
+  @media (min-width: $desktop-width) {
+    height: 287px;
+  }
 }
 
-.page-main__gallery-hero { 
-    display: block;
-    margin: 0 auto;
-    padding: 65px 20px;
- }
+.page-main__gallery-hero {
+  display: block;
+  margin: 0 auto;
+  padding: 65px 20px;
+}

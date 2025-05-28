@@ -1,23 +1,86 @@
-.page-main__background {
-  background-color: #81b3d2;
-  // background-image: url("/source/images/bg-mobile@1x.jpg");
-  // background-repeat: no-repeat;
-  // background-position: bottom, center;
-  // background-size: 100% 57px, cover;
-  // padding: 90px 19px 85px;
-}
+.hero {
+  position: relative;
+  padding: 90px 19px 85px;
+  min-height: 390px;
+  z-index: -1;
 
-// @media (min-width: $tablet-width) {
-//         background-image: url("/source/images/divider-tablet.svg"), url("/source/images/back-tablet@1x.jpg");
-// }
 
-// @media (min-width: $desktop-width) {
-//         background-image: url("/source/images/divider-desctop.svg"), url("/source/images/back-desktop@1x.jpg");
-// }
-// }
+  @media (min-width: $tablet-width) {
+    padding: 95px 50px 115px;
+    min-height: 520px;
+  }
 
-.page-main__hero {
-  display: block;
+  @media (min-width: $desktop-width) {
+    padding: 105px 100px 130px;
+    min-height: 560px;
+  }
+
+  &__img {
+   display: block;
   margin: 0 auto;
   padding: 40px 20px;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/source/images/bg-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border: 2px solid red;
+    background-color: aqua;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/source/images/bg-tablet@1x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("/source/images/bg-desktop@1x.jpg");
+    }
+  }
+
+  &__text-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 282px;
+    margin: 0 auto;
+    z-index: 2;
+  
+
+    @media (min-width: $tablet-width) {
+      max-width: 460px;
+    }
+
+  }
+
+  &__divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 57px;
+    background: url("/source/icons/divider-mobale.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
+    z-index: 1;
+  
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/source/icons/divider-tablet.svg");
+      height: 75px;
+    }
+  
+
+    @media (min-width: $desktop-width) {
+      background-image: url("/source/icons/divider-desctop.svg");
+      height: 95px;
+    }
+  }
 }

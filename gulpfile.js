@@ -115,7 +115,8 @@ export function optimizeRaster () {
 
   return src(`${PATH_TO_RAW}images/**/*.{png,jpg,jpeg}`)
     .pipe(sharp(createOptionsFormat()))
-    .pipe(dest(`${PATH_TO_SOURCE}images`));
+    .pipe(dest(`${PATH_TO_SOURCE}images`))
+    .pipe(dest(`${PATH_TO_DIST}images`));
 }
 
 export function optimizeVector () {

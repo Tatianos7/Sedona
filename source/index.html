@@ -19,7 +19,7 @@
         
         <div class="main-nav__wrapper">
 
-        <ul class="main-nav__list site-list">
+        <ol class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="main-nav__link" href="#">Главная</a>
           </li>
@@ -32,9 +32,9 @@
           <li class="site-list__item">
             <a class="main-nav__link" href="form.html">Отзывы</a>
           </li>
-        </ul>
+        </ol>
 
-        <ul class="main-nav__list user-list">
+        <ol class="main-nav__list user-list">
           <li class="user-list__item">
             <a class="user-list__login js-login" href="login.html">
               <svg class="user-list__login-icon" width="16" height="16">
@@ -43,7 +43,7 @@
               Войти
             </a>
           </li>
-        </ul>
+        </ol>
         </div>
       </nav>
     </header>
@@ -90,7 +90,7 @@
                   <picture>
                     <source media="(min-width: 1200px)" srcset="images/photo-city-desktop@1x@1x.jpg#sedona-advantages-desktop 1x, images/photo-city-desktop@1x@2x.jpg#sedona-advantages-desktop@2x 2x" width="800" height="260">
                     <source media="(min-width: 768px)" srcset="images/photo-city-tablet@1x@1x.jpg#sedona-advantages-tablet 1x, images/photo-city-tablet@1x@2x.jpg#sedona-advantages-tablet@2x 2x" width="520" height="260">
-                    <img class="advantages__image" src="images/photo-city-mobile@1x 1@1x.jpg" srcset="images/photo-city-mobile@1x 1@2x.jpg#sedona-advantages-mobile 2x" width="320" height="260" alt="Фото города Седона с заведенями">
+                    <img class="advantages__image" src="images/photo-city-mobile@1x1@1x.jpg" srcset="images/photo-city-mobile@1x1@2x.jpg#sedona-advantages-mobile 2x" width="320" height="260" alt="Фото города Седона с заведенями">
           </picture>
           </div> 
         </li>
@@ -135,7 +135,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="images/photo-bridge-desktop@1x@1x.jpg#sedona-advantages-desktop 1x, images/photo-bridge-desktop@1x@2x.jpg#sedona-advantages-desktop@2x 2x" width="800" height="260">
               <source media="(min-width: 768px)" srcset="images/photo-bridge-tablet@1x@1x.jpg#sedona-advantages-tablet 1x, images/photo-bridge-tablet@1x@2x.jpg#sedona-advantages-tablet@2x 2x" width="512" height="260">
-            <img class="advantages__image" src="images/photo-bridge-mobail@1x 1@1x.jpg" srcset="images/photo-bridge-mobail@1x 1@2x.jpg#sedona-advantages-mobile 2x" width="320" height="260" alt="Фото Моста дьявола: природного каменного моста между скалами">
+            <img class="advantages__image" src="images/photo-bridge-mobail@1x1@1x.jpg" srcset="images/photo-bridge-mobail@1x1@2x.jpg#sedona-advantages-mobile 2x" width="320" height="260" alt="Фото Моста дьявола: природного каменного моста между скалами">
             </picture>
           </div>
           </li>
@@ -163,45 +163,6 @@
         </ol>
       </section>
 
-
-      <!-- Отзывы - глянуть дизайн в барбершопе и сделать так же по всем адаптивам -->
-      <!-- <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">отзывы о нас</h2>
-          <a class="reviews__write button" href="form.html">Оставить свой</a>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <img class="reviews__autor-image" src="#" width="50" height="33" alt="Фото Трэвиса Баркера">
-              <div class="reviews__autor-info">
-                <cite class="reviews__autor-name">Трэвис Баркер</cite>
-                <p class="reviews__text">Спасибо за клевый отдых</p>
-              </div>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <img class="reviews__autor-image" src="#" width="50" height="33" alt="Фото Трэвиса Баркера">
-              <div class="reviews__autor-info">
-                <cite class="reviews__autor-name">Джон Смит</cite>
-                <p class="reviews__text">Спасибо за клевый отдых</p>
-              </div>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <img class="reviews__autor-image" src="#" width="50" height="33" alt="Фото Трэвиса Баркера">
-              <div class="reviews__autor-info">
-                <cite class="reviews__autor-name">Иван Бородайло</cite>
-                <p class="reviews__text">Спасибо за клевый отдых</p>
-              </div>
-            </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
-          </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle slider__toggle--current" type="button">2</button>
-            <button class="slider__toggle slider__toggle--current" type="button">3</button>
-          </p>
-        </div>
-      </section> -->
-
       <!-- Происк гостиницы -->
       <section class="search">
         <div class="search__wrapper">
@@ -210,7 +171,7 @@
         <p class="search__title">Заинтересовались?</p>
         <p class="search__description">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
-        <button class="search__button" href="#">найти гостиницу</button>
+        <button class="search__button">найти гостиницу</button>
       </div>
       </section>
       <div class="map-responsive">
@@ -219,9 +180,9 @@
     </main>
 
     <footer class="page-footer">
+ 
       <div class="page-footer__wrapper">
         <b class="social__title">#visitsedona</b>
-
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

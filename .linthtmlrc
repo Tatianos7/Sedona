@@ -1,0 +1,1 @@
+echo '{"extends":"linthtml-config-htmlacademy"}' > .linthtmlrc

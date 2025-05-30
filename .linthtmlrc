@@ -1,1 +1,7 @@
-echo '{"extends":"linthtml-config-htmlacademy"}' > .linthtmlrc
+{
+  "extends": "linthtml-config-htmlacademy",
+  "rules": {
+    "attr-quote-style": "double",
+    "tag-self-close": "never"
+  }
+}

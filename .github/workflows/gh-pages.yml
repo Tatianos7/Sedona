@@ -1,7 +1,7 @@
 name: Deploy to GitHub Pages
 on:
   push:
-    branches: [main]  # Укажите вашу основную ветку
+    branches: [task6]  # Укажите вашу основную ветку
 
 jobs:
   deploy:

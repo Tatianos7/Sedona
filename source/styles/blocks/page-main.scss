@@ -1,4 +1,5 @@
-.hero {
+.page-main {
+&__hero {
   position: relative;
   padding: 90px 19px 85px;
   min-height: 390px;
@@ -13,6 +14,7 @@
     padding: 105px 100px 130px;
     min-height: 560px;
   }
+}
 
   &__img {
     display: block;
@@ -21,7 +23,7 @@
     padding: 40px 20px;
   }
 
-  &__background {
+  &__bg {
     position: absolute;
     top: 0;
     left: 0;

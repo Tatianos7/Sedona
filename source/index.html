@@ -50,10 +50,10 @@
 
         <main class="page-main">
           <h1 class="visually-hidden">Туристический город Седона</h1>
-          <section class="hero">
-            <div class="hero__background">
+          <section class="page-main__hero">
+            <div class="page-main__bg">
             </div>
-            <div class="hero__content">
+            <div class="page-main__content">
               <picture>
                 <source 
                 media="(min-width: 768px)" 
@@ -61,7 +61,7 @@
                         ./images/front-tablet.svg#sedona-greeting-tablet@2x 2x" 
                 width="461" 
                 height="350">
-               <img class="hero__img" 
+               <img class="page-main__img" 
                src="./images/front-mobile.svg" 
                srcset="./images/front-mobile.svg#sedona-greeting@2x 2x" 
                width="282" 
@@ -69,7 +69,7 @@
                alt="Город Седона"> <!--контентная картинка-->
               </picture>
             </div>
-            <div class="hero__divider"></div>
+            <div class="page-main__divider"></div>
           </section>
 
       <section class="advantages"> <!--фото контентные-->
@@ -182,7 +182,9 @@
     <footer class="page-footer">
  
       <div class="page-footer__wrapper">
-        <b class="social__title">#visitsedona</b>
+        <div class="page-footer__social social">  
+          <b class="social__title">#visitsedona</b>
+        </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -219,17 +221,17 @@
       </div>
     </footer>
     
-    <section class="modal__hotel-search">
-      <div class="modal__container">
-        <h2 class="modal__title section-title">поиск гостиницы в Седоне</h2>
-        <button class="modal__close" type="button">
-          <svg class="modal__close__icon" width="16" height="16">
+    <section class="finder-modal">
+      <div class="finder-modal__container">
+        <h2 class="finder-modal__title section-title">поиск гостиницы в Седоне</h2>
+        <button class="finder-modal__close" type="button">
+          <svg class="finder-modal__icon" width="16" height="16">
             <use xlink:href="icons/stack.svg#modal-close"></use>
           </svg> 
           <span class="visually-hidden">Закрыть окно</span>
         </button>
 
-        <form class="modal__content search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="finder-modal__content search-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="search-form-date field field-search">
             <label class="field-title" for="date-in">Дата заезда:</label>
             <input class="field-input" type="text" name="date-in" id="date-in" placeholder="Укажите дату" value="27 апреля 2020">
@@ -270,7 +272,7 @@
             </div>
           </div>
 
-          <div class="search-form-amount field field-search">
+          <div class="search-form__amount field field-search">
             <span class="field-title field-title-info">
               <label for="children">Дети:</label>
               <span class="field-info" id="children-info">

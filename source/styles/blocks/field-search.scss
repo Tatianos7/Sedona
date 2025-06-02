@@ -1,12 +1,7 @@
 // разобраться что тут вообще происходит и от куда это
 .field {
   display: flex;
-}
-
-.field-title-info {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: 20px;
+  
 }
 
 .field-input {
@@ -22,24 +17,6 @@
   font-size: 18px;
 }
 
-.field-input:hover {
-  background-color: #e6e6e6;
-}
-
-.field-input:focus {
-  background-color: #e6e6e6;
-  outline: 3px solid #83b3d3;
-}
-
-.field-input-error {
-  border-color: $error;
-}
-
-.field-input[disabled] {
-  opacity: 0.3;
-  background-color: #d3d3d3;
-}
-
 .field-search {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -50,7 +27,6 @@
 
 .field-search .field-title {
   align-self: center;
-
   font-weight: 700;
 }
 
@@ -64,21 +40,14 @@
   font-size: 16px;
 }
 
-// .field-message-error {
-//   color: #ff5757;
-// }
-
 .field-info {
   position: relative;
 
   width: 25px;
   height: 25px;
-  margin-right: 5px;
   margin-left: 10px;
 
   background-color: #83b3d3;
-  // background-repeat: no-repeat;
-  // background-position: 50% 50%;
   border-radius: 50%;
 }
 
@@ -135,6 +104,3 @@
   left: 540px;
 }
 
-.field-info__info {
-  margin: 4px;
-}

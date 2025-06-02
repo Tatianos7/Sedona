@@ -8,7 +8,7 @@
   }
 }
 
-.video-conteiner {
+.video__container {
   @media (min-width: $tablet-width) {
     margin-left: 60px;
     margin-right: 60px;
@@ -20,7 +20,7 @@
 }
 
 /* Основные стили для блока управления */
-.video-controls {
+.video__controls {
   position: relative;
   top: -40px;
   left: 0;
@@ -46,7 +46,7 @@
 }
 
 /* Стили для кнопок */
-.control-button {
+.video__control-button {
   background: none;
   border: none;
   color: white;
@@ -59,12 +59,12 @@
   }
 }
 
-.control-button:hover {
+.video__control-button:hover {
   color: $whate;
 }
 
 /* Прогресс-бар */
-.progress-bar {
+.video__progress-bar {
   flex-grow: 1;
   height: 5px;
   background: rgba(255, 255, 255, 0.3);
@@ -74,14 +74,14 @@
   border-radius: 2px;
 }
 
-.progress {
+.video__progress {
   height: 100%;
   width: 30%; /* Текущий прогресс (можно менять динамически) */
   background: $whate;
   border-radius: 2px;
 }
 
-.scrubber {
+.video__scrubber {
   width: 10px;
   height: 10px;
   background: $whate;
@@ -95,11 +95,11 @@
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 600px) {
-  .progress-bar {
+  .video__progress-bar {
     height: 3px;
   }
 
-  .scrubber {
+  .video__scrubber {
     width: 8px;
     height: 8px;
   }

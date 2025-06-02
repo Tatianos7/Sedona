@@ -5,16 +5,16 @@
   row-gap: 40px;
 }
 
-.search-form-date {
+.search-form__field {
   grid-column: 1 / -1;
 }
 
-.search-form-date .field-input {
+.search-form__field .field-input {
   background-repeat: no-repeat;
   background-position: right 17px top 50%;
 }
 
-.search-form-date .field-input:not(:placeholder-shown):focus {
+.search-form__field .field-input:not(:placeholder-shown):focus {
   outline: none;
   background-color: #ffffff;
   border: 2px solid #000000;
@@ -28,4 +28,18 @@
   color: $whate;
   background-color: $blue;
   border: none;
+}
+
+.search-form-label {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+
+.search-form-date {
+  grid-column: 1 / -1;
+}
+
+.search-form__amount {
+  margin-left: 40px;
 }

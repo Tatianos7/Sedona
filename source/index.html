@@ -182,9 +182,9 @@
     <footer class="page-footer">
  
       <div class="page-footer__wrapper">
-        <div class="page-footer__social social">  
-          <b class="social__title">#visitsedona</b>
-        </div>
+ 
+          <b class="page-footer__title">#visitsedona</b>
+          
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -219,17 +219,19 @@
           </a>
         </div>
       </div>
+
     </footer>
-    
-    <section class="finder-modal">
-      <div class="finder-modal__container">
-        <h2 class="finder-modal__title section-title">поиск гостиницы в Седоне</h2>
-        <button class="finder-modal__close" type="button">
-          <svg class="finder-modal__icon" width="16" height="16">
-            <use xlink:href="icons/stack.svg#modal-close"></use>
-          </svg> 
-          <span class="visually-hidden">Закрыть окно</span>
-        </button>
+
+
+        <section class="finder-modal">
+          <div class="finder-modal__container">
+            <h2 class="finder-modal__title section-title">Поиск гостиницы в Седоне</h2>
+            <button class="finder-modal__close" type="button">
+              <svg class="finder-modal__icon" width="16" height="16">
+                <use xlink:href="icons/stack.svg#modal-close"></use>
+              </svg> 
+              <span class="visually-hidden">Закрыть окно</span>
+            </button>
 
         <form class="finder-modal__content search-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="search-form-date field field-search">
@@ -273,18 +275,17 @@
           </div>
 
           <div class="search-form__amount field field-search">
-            <span class="field-title field-title-info">
+            <div class="field-title field-title-info">
               <label for="children">Дети:</label>
-              <span class="field-info" id="children-info">
-                <svg class="field-info__info" width="16" height="16">
+              <button class="field-info" id="children-info">
+                <svg class="field-info__info" width="1" height="9">
                   <use xlink:href="icons/stack.svg#info"></use>
                 </svg>
                 <span class="field-info-text">
                   Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                 </span>
-               
-              </span>
-            </span>
+              </button>
+            </div>
 
             <div class="field-number number">
               <button class="number-button number-button-minus" type="button">
@@ -325,6 +326,54 @@
           navMain.classList.remove('main-nav--opened');
         }
       });
+
+      // Модальное окно
+
+      document.addEventListener('DOMContentLoaded', function() {
+    // Элементы страницы
+    const searchButton = document.querySelector('.search__button');
+    const modal = document.querySelector('.finder-modal');
+    const closeButton = modal.querySelector('.finder-modal__close');
+
+    // Показать модальное окно
+    function showModal() {
+        modal.style.display = 'block';
+        document.addEventListener('keydown', handleEscape);
+        document.addEventListener('click', handleOutsideClick);
+    }
+
+    // Скрыть модальное окно
+    function hideModal() {
+        modal.style.display = 'none';
+        document.removeEventListener('keydown', handleEscape);
+        document.removeEventListener('click', handleOutsideClick);
+    }
+
+    // Обработчик Esc
+    function handleEscape(event) {
+        if (event.key === 'Escape') {
+            hideModal();
+        }
+    }
+
+    // Обработчик клика вне модалки
+    function handleOutsideClick(event) {
+        if (!modal.contains(event.target) && event.target !== searchButton) {
+            hideModal();
+        }
+    }
+
+    // Слушатели событий
+    searchButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        showModal();
+    });
+
+    closeButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        hideModal();
+    });
+});
     </script>
   </body>
 </html>

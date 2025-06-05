@@ -30,16 +30,10 @@
   border: none;
 }
 
-.search-form-label {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: 20px;
-}
-
 .search-form-date {
   grid-column: 1 / -1;
 }
 
 .search-form__amount {
-  margin-left: 40px;
+  margin-left: 15px;
 }

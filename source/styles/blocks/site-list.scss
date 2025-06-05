@@ -11,9 +11,9 @@
     margin-left: 10px;
     flex-grow: 1;
   }
-}
 
-.site-list a {
+
+ a {
   color: $whate;
   text-decoration: none;
   line-height: 26px;
@@ -24,7 +24,7 @@
   }
 }
 
-.site-list__item {
+&__item {
   padding: 17px 15px;
   padding-bottom: 13px;
   font-size: 18px;
@@ -35,4 +35,5 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+}
 }

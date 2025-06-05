@@ -1,20 +1,20 @@
 .page-main {
-&__hero {
-  position: relative;
-  padding: 90px 19px 85px;
-  min-height: 390px;
-  z-index: -1;
+  &__hero {
+    position: relative;
+    padding: 90px 19px 85px;
+    min-height: 390px;
+    z-index: -1;
 
-  @media (min-width: $tablet-width) {
-    padding: 95px 50px 115px;
-    min-height: 520px;
-  }
+    @media (min-width: $tablet-width) {
+      padding: 95px 50px 115px;
+      min-height: 520px;
+    }
 
-  @media (min-width: $desktop-width) {
-    padding: 105px 100px 130px;
-    min-height: 560px;
+    @media (min-width: $desktop-width) {
+      padding: 105px 100px 130px;
+      min-height: 560px;
+    }
   }
-}
 
   &__img {
     display: block;
@@ -43,12 +43,10 @@
     max-width: 282px;
     margin: 0 auto;
     z-index: 2;
-  
 
     @media (min-width: $tablet-width) {
       max-width: 460px;
     }
-
   }
 
   &__divider {
@@ -62,7 +60,6 @@
     background-position: bottom center;
     background-size: 100% auto;
     z-index: 1;
-  
 
     @media (min-width: $tablet-width) {
       background-image: url("../../icons/divider-tablet.svg");
@@ -70,4 +67,3 @@
     }
   }
 }
-

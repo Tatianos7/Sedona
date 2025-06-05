@@ -6,7 +6,7 @@
   left: 0;
   z-index: 4;
 
-  display: block; // убирает модальное окно. Сделать рабочей возможность открывать и закрываь окно в css или через js
+  display: none; // убирает модальное окно. Сделать рабочей возможность открывать и закрываь окно в css или через js
   place-content: center;
 
   background-color: rgba(242, 242, 242, 0.8);
@@ -21,8 +21,7 @@
   grid-template-columns: 1fr min-content;
   row-gap: 54px;
   width: 715px;
-  padding: 70px;
-  padding-top: 54px;
+  padding: 60px;
   margin: 0 auto;
   background-color: #ffffff;
   border-radius: 30px;

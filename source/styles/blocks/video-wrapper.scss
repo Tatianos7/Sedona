@@ -1,4 +1,6 @@
-.video__wrapper {
+.video{
+  
+  &__wrapper {
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -8,7 +10,7 @@
   }
 }
 
-.video-conteiner {
+&__container {
   @media (min-width: $tablet-width) {
     margin-left: 60px;
     margin-right: 60px;
@@ -20,7 +22,7 @@
 }
 
 /* Основные стили для блока управления */
-.video-controls {
+&__controls {
   position: relative;
   top: -40px;
   left: 0;
@@ -40,13 +42,13 @@
   }
 }
 
-.video__image {
+&__images {
   width: 100%;
   // display: block;
 }
 
 /* Стили для кнопок */
-.control-button {
+&__control-button {
   background: none;
   border: none;
   color: white;
@@ -59,12 +61,12 @@
   }
 }
 
-.control-button:hover {
+&__control-button:hover {
   color: $whate;
 }
 
 /* Прогресс-бар */
-.progress-bar {
+&__progress-bar {
   flex-grow: 1;
   height: 5px;
   background: rgba(255, 255, 255, 0.3);
@@ -74,14 +76,14 @@
   border-radius: 2px;
 }
 
-.progress {
+&__progress {
   height: 100%;
   width: 30%; /* Текущий прогресс (можно менять динамически) */
   background: $whate;
   border-radius: 2px;
 }
 
-.scrubber {
+&__scrubber {
   width: 10px;
   height: 10px;
   background: $whate;
@@ -95,21 +97,21 @@
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 600px) {
-  .progress-bar {
+&__progress-bar {
     height: 3px;
   }
 
-  .scrubber {
+  &__scrubber {
     width: 8px;
     height: 8px;
   }
 }
 
-.video__title-block {
+&__block {
   padding: 32px 27px 32px 27px;
 }
 
-.video__slogan {
+&__slogan {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -120,7 +122,7 @@
   }
 }
 
-.video__intro {
+&__intro {
   font-size: 14px;
   line-height: 24px;
   margin: 0;
@@ -134,4 +136,5 @@
       display: block;
     }
   }
+}
 }

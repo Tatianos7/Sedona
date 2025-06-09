@@ -46,12 +46,8 @@
     position: relative;
     background-color: $mediumgrey;
     padding: 26px;
-    border-bottom: 2px solid $whategrey; // как убрать бордер у последнего блока?
+    border-bottom: 2px solid $whategrey; 
   }
-
-  // .advantages__description-favor:not(:last-child) { // почему не работает?
-  //   border-bottom: none;
-  // }
 
   &__description::before {
     content: "- №" counter(advantages) " -";

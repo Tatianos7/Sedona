@@ -3,10 +3,10 @@
   margin: 0 auto;
   margin-bottom: 40px;
   text-align: center;
-}
+
 
 /* Базовые стили */
-.photo-container__list {
+&__list {
   display: grid;
   margin: 0 auto;
   @media (min-width: 768px) {
@@ -22,15 +22,15 @@
 }
 
 /* Первая картинка на всю ширину */
-.photo-container__item:first-child {
+&__item:first-child {
   grid-column: 1 / -1;
 }
 
-.photo-container__item {
+&__item {
   margin: 20px;
 }
 
-.photo-container__wrapper {
+&__wrapper {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 30px;
@@ -78,13 +78,13 @@
 }
 
 /* Стили изображений */
-.photo-container__photo {
+&__photo {
   width: 100%;
   object-fit: cover;
   display: block;
 }
 
-.photo-container__title {
+&__title {
   font-size: 18px;
   line-height: 26px;
   @media (min-width: $tablet-width) {
@@ -92,7 +92,7 @@
   }
 }
 
-.photo-container__intro {
+&__intro {
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
@@ -100,7 +100,7 @@
 }
 
 /* Подписи */
-.photo-container__caption {
+&__caption {
   display: flex;
   flex-direction: column;
 
@@ -122,7 +122,7 @@
   }
 }
 
-.photo-container__description {
+&__description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -136,7 +136,7 @@
   }
 }
 
-.photo-container__author {
+&__author {
   font-weight: normal;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -147,7 +147,7 @@
   }
 }
 
-.photo-container__likes {
+&__likes {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -158,7 +158,7 @@
   }
 }
 
-.photo-container__quantity {
+&__quantity {
   border: none;
   outline: none;
   background: inherit;
@@ -168,4 +168,5 @@
   @media (min-width: $desktop-width) {
     color: $whate;
   }
+}
 }

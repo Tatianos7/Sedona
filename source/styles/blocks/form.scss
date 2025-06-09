@@ -1,9 +1,9 @@
 .form {
   max-width: 400px;
   margin: 50px auto;
-}
 
-.form__input {
+
+&__input {
   position: relative;
   display: block;
   width: 100%;
@@ -12,11 +12,11 @@
   border: 1px solid #ddd;
 }
 
-.form__input--error {
+&__input--error {
   border: 2px solid #ff4444 !important;
 }
 
-.form__submit {
+&__submit {
   background: #2196f3;
   color: white;
   padding: 10px 20px;
@@ -24,4 +24,5 @@
   border-radius: 4px;
   cursor: pointer;
   width: 100%;
+}
 }

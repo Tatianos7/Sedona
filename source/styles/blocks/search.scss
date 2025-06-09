@@ -1,4 +1,5 @@
-.search__wrapper {
+.search {
+&__wrapper {
   width: 100%;
   padding: 33 25px;
   padding-bottom: 49px;
@@ -6,7 +7,7 @@
   text-align: center;
 }
 
-.search__title {
+&__title {
   margin: 0;
   margin-bottom: 33px;
   font-size: 21px;
@@ -17,7 +18,7 @@
   }
 }
 
-.search__description {
+&__description {
   font-size: 14px;
   line-height: 24px;
   padding-bottom: 27px;
@@ -31,7 +32,7 @@
   }
 }
 
-.search__button {
+&__button {
   font-family: "PT Sans";
   width: 270px;
   height: 58px;
@@ -45,6 +46,7 @@
   @media (min-width: $tablet-width) {
     width: 458px;
   }
+}
 }
 
 iframe {

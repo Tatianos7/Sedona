@@ -10,13 +10,13 @@
   place-content: center;
 
   background-color: rgba(242, 242, 242, 0.8);
-}
 
-.finder-modal__opened {
+
+&__opened {
   display: grid;
 }
 
-.finder-modal__container {
+&__container {
   display: grid;
   grid-template-columns: 1fr min-content;
   row-gap: 54px;
@@ -28,7 +28,7 @@
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-.finder-modal__close {
+&__close {
   width: 53px;
   height: 53px;
   padding: 0;
@@ -38,16 +38,17 @@
   border-radius: 50%;
 }
 
-.finder-modal__title {
+&__title {
   align-self: center;
   margin: 0;
 }
 
-.finder-modal__content {
+&__content {
   position: relative;
   grid-column: 1 / -1;
 }
 
-.finder-modal__icon {
+&__icon {
   z-index: 6;
+}
 }

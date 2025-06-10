@@ -1,44 +1,39 @@
-.hero {
-  position: relative;
-  padding: 90px 19px 85px;
-  min-height: 390px;
-  z-index: -1;
+.page-main {
+  &__hero {
+    position: relative;
+    padding: 90px 19px 85px;
+    min-height: 390px;
+    z-index: -1;
 
-  @media (min-width: $tablet-width) {
-    padding: 95px 50px 115px;
-    min-height: 520px;
-  }
+    @media (min-width: $tablet-width) {
+      padding: 95px 50px 115px;
+      min-height: 520px;
+    }
 
-  @media (min-width: $desktop-width) {
-    padding: 105px 100px 130px;
-    min-height: 560px;
+    @media (min-width: $desktop-width) {
+      padding: 105px 100px 130px;
+      min-height: 560px;
+    }
   }
 
   &__img {
-   display: block;
-  margin: 0 auto;
-  padding: 40px 20px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    padding: 40px 20px;
   }
 
-  &__background {
+  &__bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../../images/bg-mobile@1x.jpg");
+    background-image: url("../../images/bg-desktop@2x.webp");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
     z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      background-image: url("../../images/bg-tablet@1x.jpg");
-    }
-
-    @media (min-width: $desktop-width) {
-      background-image: url("../../images/bg-desktop@1x.jpg");
-    }
   }
 
   &__text-image {
@@ -48,12 +43,10 @@
     max-width: 282px;
     margin: 0 auto;
     z-index: 2;
-  
 
     @media (min-width: $tablet-width) {
       max-width: 460px;
     }
-
   }
 
   &__divider {
@@ -67,16 +60,9 @@
     background-position: bottom center;
     background-size: 100% auto;
     z-index: 1;
-  
 
     @media (min-width: $tablet-width) {
       background-image: url("../../icons/divider-tablet.svg");
-      height: 55px;
-    }
-  
-
-    @media (min-width: $desktop-width) {
-      background-image: url("../../icons/divider-desctop.svg");
       height: 55px;
     }
   }

@@ -1,0 +1,7 @@
+{
+  "extends": "linthtml-config-htmlacademy",
+  "rules": {
+    "attr-quote-style": "double",
+    "tag-self-close": "never"
+  }
+}

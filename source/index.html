@@ -19,9 +19,9 @@
         
         <div class="main-nav__wrapper">
 
-        <ul class="main-nav__list site-list">
+        <ol class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="main-nav__link" href="#">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="main-nav__link" href="#">Гостиницы</a>
@@ -32,9 +32,9 @@
           <li class="site-list__item">
             <a class="main-nav__link" href="form.html">Отзывы</a>
           </li>
-        </ul>
+        </ol>
 
-        <ul class="main-nav__list user-list">
+        <ol class="main-nav__list user-list">
           <li class="user-list__item">
             <a class="user-list__login js-login" href="login.html">
               <svg class="user-list__login-icon" width="16" height="16">
@@ -43,17 +43,17 @@
               Войти
             </a>
           </li>
-        </ul>
+        </ol>
         </div>
       </nav>
     </header>
 
         <main class="page-main">
           <h1 class="visually-hidden">Туристический город Седона</h1>
-          <section class="hero">
-            <div class="hero__background">
+          <section class="page-main__hero">
+            <div class="page-main__bg">
             </div>
-            <div class="hero__content">
+            <div class="page-main__content">
               <picture>
                 <source 
                 media="(min-width: 768px)" 
@@ -61,7 +61,7 @@
                         ./images/front-tablet.svg#sedona-greeting-tablet@2x 2x" 
                 width="461" 
                 height="350">
-               <img class="hero__img" 
+               <img class="page-main__img" 
                src="./images/front-mobile.svg" 
                srcset="./images/front-mobile.svg#sedona-greeting@2x 2x" 
                width="282" 
@@ -69,7 +69,7 @@
                alt="Город Седона"> <!--контентная картинка-->
               </picture>
             </div>
-            <div class="hero__divider"></div>
+            <div class="page-main__divider"></div>
           </section>
 
       <section class="advantages"> <!--фото контентные-->
@@ -90,7 +90,7 @@
                   <picture>
                     <source media="(min-width: 1200px)" srcset="images/photo-city-desktop@1x@1x.jpg#sedona-advantages-desktop 1x, images/photo-city-desktop@1x@2x.jpg#sedona-advantages-desktop@2x 2x" width="800" height="260">
                     <source media="(min-width: 768px)" srcset="images/photo-city-tablet@1x@1x.jpg#sedona-advantages-tablet 1x, images/photo-city-tablet@1x@2x.jpg#sedona-advantages-tablet@2x 2x" width="520" height="260">
-                    <img class="advantages__image" src="images/photo-city-mobile@1x 1@1x.jpg" srcset="images/photo-city-mobile@1x 1@2x.jpg#sedona-advantages-mobile 2x" width="320" height="260" alt="Фото города Седона с заведенями">
+                    <img class="advantages__image" src="images/photo-city-mobile@1x1@1x.jpg" srcset="images/photo-city-mobile@1x1@2x.jpg#sedona-advantages-mobile 2x" width="320" height="260" alt="Фото города Седона с заведенями">
           </picture>
           </div> 
         </li>
@@ -135,7 +135,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="images/photo-bridge-desktop@1x@1x.jpg#sedona-advantages-desktop 1x, images/photo-bridge-desktop@1x@2x.jpg#sedona-advantages-desktop@2x 2x" width="800" height="260">
               <source media="(min-width: 768px)" srcset="images/photo-bridge-tablet@1x@1x.jpg#sedona-advantages-tablet 1x, images/photo-bridge-tablet@1x@2x.jpg#sedona-advantages-tablet@2x 2x" width="512" height="260">
-            <img class="advantages__image" src="images/photo-bridge-mobail@1x 1@1x.jpg" srcset="images/photo-bridge-mobail@1x 1@2x.jpg#sedona-advantages-mobile 2x" width="320" height="260" alt="Фото Моста дьявола: природного каменного моста между скалами">
+            <img class="advantages__image" src="images/photo-bridge-mobail@1x1@1x.jpg" srcset="images/photo-bridge-mobail@1x1@2x.jpg#sedona-advantages-mobile 2x" width="320" height="260" alt="Фото Моста дьявола: природного каменного моста между скалами">
             </picture>
           </div>
           </li>
@@ -163,45 +163,6 @@
         </ol>
       </section>
 
-
-      <!-- Отзывы - глянуть дизайн в барбершопе и сделать так же по всем адаптивам -->
-      <!-- <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">отзывы о нас</h2>
-          <a class="reviews__write button" href="form.html">Оставить свой</a>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <img class="reviews__autor-image" src="#" width="50" height="33" alt="Фото Трэвиса Баркера">
-              <div class="reviews__autor-info">
-                <cite class="reviews__autor-name">Трэвис Баркер</cite>
-                <p class="reviews__text">Спасибо за клевый отдых</p>
-              </div>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <img class="reviews__autor-image" src="#" width="50" height="33" alt="Фото Трэвиса Баркера">
-              <div class="reviews__autor-info">
-                <cite class="reviews__autor-name">Джон Смит</cite>
-                <p class="reviews__text">Спасибо за клевый отдых</p>
-              </div>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <img class="reviews__autor-image" src="#" width="50" height="33" alt="Фото Трэвиса Баркера">
-              <div class="reviews__autor-info">
-                <cite class="reviews__autor-name">Иван Бородайло</cite>
-                <p class="reviews__text">Спасибо за клевый отдых</p>
-              </div>
-            </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
-          </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle slider__toggle--current" type="button">2</button>
-            <button class="slider__toggle slider__toggle--current" type="button">3</button>
-          </p>
-        </div>
-      </section> -->
-
       <!-- Происк гостиницы -->
       <section class="search">
         <div class="search__wrapper">
@@ -210,7 +171,7 @@
         <p class="search__title">Заинтересовались?</p>
         <p class="search__description">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
-        <button class="search__button" href="#">найти гостиницу</button>
+        <button class="search__button">найти гостиницу</button>
       </div>
       </section>
       <div class="map-responsive">
@@ -219,9 +180,11 @@
     </main>
 
     <footer class="page-footer">
+ 
       <div class="page-footer__wrapper">
-        <b class="social__title">#visitsedona</b>
-
+ 
+          <b class="page-footer__title">#visitsedona</b>
+          
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -256,19 +219,21 @@
           </a>
         </div>
       </div>
-    </footer>
-    
-    <section class="modal__hotel-search">
-      <div class="modal__container">
-        <h2 class="modal__title section-title">поиск гостиницы в Седоне</h2>
-        <button class="modal__close" type="button">
-          <svg class="modal__close__icon" width="16" height="16">
-            <use xlink:href="icons/stack.svg#modal-close"></use>
-          </svg> 
-          <span class="visually-hidden">Закрыть окно</span>
-        </button>
 
-        <form class="modal__content search-form" action="https://echo.htmlacademy.ru/" method="post">
+    </footer>
+
+
+        <section class="finder-modal">
+          <div class="finder-modal__container">
+            <h2 class="finder-modal__title section-title">Поиск гостиницы в Седоне</h2>
+            <button class="finder-modal__close" type="button">
+              <svg class="finder-modal__icon" width="16" height="16">
+                <use xlink:href="icons/stack.svg#modal-close"></use>
+              </svg> 
+              <span class="visually-hidden">Закрыть окно</span>
+            </button>
+
+        <form class="finder-modal__content search-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="search-form-date field field-search">
             <label class="field-title" for="date-in">Дата заезда:</label>
             <input class="field-input" type="text" name="date-in" id="date-in" placeholder="Укажите дату" value="27 апреля 2020">
@@ -309,19 +274,18 @@
             </div>
           </div>
 
-          <div class="search-form-amount field field-search">
-            <span class="field-title field-title-info">
+          <div class="search-form__amount field field-search">
+            <div class="field-title field-title-info">
               <label for="children">Дети:</label>
-              <span class="field-info" id="children-info">
-                <svg class="field-info__info" width="16" height="16">
+              <button class="field-info" id="children-info">
+                <svg class="field-info__info" width="1" height="9">
                   <use xlink:href="icons/stack.svg#info"></use>
                 </svg>
                 <span class="field-info-text">
                   Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                 </span>
-               
-              </span>
-            </span>
+              </button>
+            </div>
 
             <div class="field-number number">
               <button class="number-button number-button-minus" type="button">
@@ -362,6 +326,54 @@
           navMain.classList.remove('main-nav--opened');
         }
       });
+
+      // Модальное окно
+
+      document.addEventListener('DOMContentLoaded', function() {
+    // Элементы страницы
+    const searchButton = document.querySelector('.search__button');
+    const modal = document.querySelector('.finder-modal');
+    const closeButton = modal.querySelector('.finder-modal__close');
+
+    // Показать модальное окно
+    function showModal() {
+        modal.style.display = 'block';
+        document.addEventListener('keydown', handleEscape);
+        document.addEventListener('click', handleOutsideClick);
+    }
+
+    // Скрыть модальное окно
+    function hideModal() {
+        modal.style.display = 'none';
+        document.removeEventListener('keydown', handleEscape);
+        document.removeEventListener('click', handleOutsideClick);
+    }
+
+    // Обработчик Esc
+    function handleEscape(event) {
+        if (event.key === 'Escape') {
+            hideModal();
+        }
+    }
+
+    // Обработчик клика вне модалки
+    function handleOutsideClick(event) {
+        if (!modal.contains(event.target) && event.target !== searchButton) {
+            hideModal();
+        }
+    }
+
+    // Слушатели событий
+    searchButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        showModal();
+    });
+
+    closeButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        hideModal();
+    });
+});
     </script>
   </body>
 </html>

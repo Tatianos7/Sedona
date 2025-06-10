@@ -1,156 +1,154 @@
-.advantages__list {
-  padding: 0;
-  margin: 0;
-  counter-reset: advantages;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.advantages {
+  &__list {
+    padding: 0;
     margin: 0;
-    padding: 0;
+    counter-reset: advantages;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0;
+      padding: 0;
+    }
   }
-}
 
-.advantages__item {
-  list-style-type: none;
-  counter-increment: advantages;
+  &__item {
+    list-style-type: none;
+    counter-increment: advantages;
 
-  @media (min-width: $tablet-width) {
-    display: grid;
+    @media (min-width: $tablet-width) {
+      display: grid;
+    }
   }
-}
 
-.advantages__item-large {
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / -1;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-    padding: 0;
+  &__item-large {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      padding: 0;
+    }
   }
-}
 
-.advantages__description {
-  position: relative;
-  height: 211px;
-  background-color: $blue;
-  color: $whate;
-  padding: 35px 20px;
+  &__description {
+    position: relative;
+    height: 211px;
+    background-color: $blue;
+    color: $whate;
+    padding: 35px 20px;
 
-  @media (min-width: $tablet-width) {
-    height: 100%;
+    @media (min-width: $tablet-width) {
+      height: 100%;
+    }
   }
-}
 
-.advantages__description-favor {
-  position: relative;
-  background-color: $mediumgrey;
-  padding: 26px;
-  border-bottom: 2px solid $whategrey; // как убрать бордер у последнего блока?
-}
-
-// .advantages__description-favor:not(:last-child) { // почему не работает?
-//   border-bottom: none;
-// }
-
-.advantages__description::before {
-  content: "- №" counter(advantages) " -";
-  position: absolute;
-  top: 90px;
-  left: 45%;
-  @media (min-width: $tablet-width) {
-    top: 110px;
-    left: 43%;
+  &__description-favor {
+    position: relative;
+    background-color: $mediumgrey;
+    padding: 26px;
+    border-bottom: 2px solid $whategrey; 
   }
-  @media (min-width: $desktop-width) {
+
+  &__description::before {
+    content: "- №" counter(advantages) " -";
+    position: absolute;
+    top: 90px;
     left: 45%;
-  }
-}
-
-.advantages__description-favor::before {
-  content: "- №" counter(advantages) " -";
-  position: absolute;
-  top: 75px;
-  right: 45%;
-  @media (min-width: $tablet-width) {
-    top: 100px;
-    right: 40%;
+    @media (min-width: $tablet-width) {
+      top: 110px;
+      left: 43%;
+    }
+    @media (min-width: $desktop-width) {
+      left: 45%;
+    }
   }
 
-  @media (min-width: $desktop-width) {
+  &__description-favor::before {
+    content: "- №" counter(advantages) " -";
+    position: absolute;
+    top: 75px;
     right: 45%;
-  }
-}
+    @media (min-width: $tablet-width) {
+      top: 100px;
+      right: 40%;
+    }
 
-.advantages__title {
-  margin: 0;
-  margin-bottom: 80px;
-  text-align: center;
-  font-size: 21px;
-  line-height: 26px;
-  br {
-    display: none;
-  }
-  @media (min-width: $tablet-width) {
-    br {
-      display: block;
+    @media (min-width: $desktop-width) {
+      right: 45%;
     }
   }
-  @media (min-width: $desktop-width) {
+
+  &__title {
+    margin: 0;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
     br {
-      display: block;
+      display: none;
+    }
+    @media (min-width: $tablet-width) {
+      br {
+        display: block;
+      }
+    }
+    @media (min-width: $desktop-width) {
+      br {
+        display: block;
+      }
     }
   }
-}
 
-.advantages__title-favor {
-  margin: 0;
-  margin-bottom: 80px;
-  text-align: center;
-  font-size: 21px;
-  line-height: 26px;
-  br {
-    display: none;
-  }
-  @media (min-width: $tablet-width) {
+  &__title-favor {
+    margin: 0;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
     br {
-      display: block;
+      display: none;
+    }
+    @media (min-width: $tablet-width) {
+      br {
+        display: block;
+      }
     }
   }
-}
 
-.advantages__photo {
-  @media (min-width: $tablet-width) {
-    grid-column: 2 / -1; // как поменять мк=естами блоки
-  }
-}
-
-// .grid {
-//   grid-column: 3 / -1;
-// }
-
-.advantages__text {
-  text-align: center;
-  margin: 0;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.advantages__text-favor {
-  text-align: center;
-  margin: 0;
-  font-size: 14px;
-  line-height: 21px;
-  br {
-    display: none;
-  }
-  @media (min-width: $tablet-width) {
-    br {
-      display: block;
+  &__photo {
+    @media (min-width: $tablet-width) {
+      grid-column: 2 / -1; // как поменять мк=естами блоки
     }
   }
-}
 
-.advantages__image {
-  min-width: 100%;
-  min-height: 100%;
+  // .grid {
+  //   grid-column: 3 / -1;
+  // }
+
+  &__text {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__text-favor {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    br {
+      display: none;
+    }
+    @media (min-width: $tablet-width) {
+      br {
+        display: block;
+      }
+    }
+  }
+
+  &__image {
+    min-width: 100%;
+    min-height: 100%;
+  }
 }

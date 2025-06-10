@@ -3,21 +3,25 @@
   grid-template-columns: 50% 1fr;
   grid-template-rows: 50px 50px 50px 60px;
   row-gap: 40px;
-}
 
-.search-form-date {
-  grid-column: 1 / -1;
-}
+  &__field {
+    grid-column: 1 / -1;
+  }
 
-.search-form-date .field-input {
-  background-repeat: no-repeat;
-  background-position: right 17px top 50%;
-}
+  &__field .field-input {
+    background-repeat: no-repeat;
+    background-position: right 17px top 50%;
+  }
 
-.search-form-date .field-input:not(:placeholder-shown):focus {
-  outline: none;
-  background-color: #ffffff;
-  border: 2px solid #000000;
+  &__field .field-input:not(:placeholder-shown):focus {
+    outline: none;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+  }
+
+  .search-form__amount {
+    margin-left: 15px;
+  }
 }
 
 .search-form-button {
@@ -28,4 +32,8 @@
   color: $whate;
   background-color: $blue;
   border: none;
+}
+
+.search-form-date {
+  grid-column: 1 / -1;
 }
